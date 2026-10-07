@@ -1,7 +1,3 @@
----
-title: "2021a software modules"
----
-
 # 2021a, GCC 10.3, and other software modules that will be removed
 
 ```
