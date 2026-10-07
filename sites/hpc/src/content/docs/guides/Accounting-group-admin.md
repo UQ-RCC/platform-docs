@@ -1,5 +1,5 @@
 ---
-title: "Accounting group admin"
+title: "Administration of accounting groups"
 ---
 
 # Accounting Group and Administration
