@@ -4,7 +4,7 @@ title: "Administration of accounting groups"
 
 # Accounting Group and Administration
 
-## Accounting group policy
+## Accounting group operational procedure
 
 Accounting group owners and administrators should read and consult the [Accounting Group Operational Procedure](../policy/Bunya-Accounting-Group-Operational-Procedure.md).
 
