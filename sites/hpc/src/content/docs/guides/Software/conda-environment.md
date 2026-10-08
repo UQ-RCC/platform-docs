@@ -1,5 +1,5 @@
 ---
-title: "Conda environment"
+title: "Bunya Conda guide"
 ---
 
 # Conda, Conda modules and Conda environments
