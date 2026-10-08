@@ -1,5 +1,5 @@
 ---
-title: "Bunya resource distribution"
+title: "Eligibility for Bunya access"
 ---
 
 # Who gets what on Bunya
