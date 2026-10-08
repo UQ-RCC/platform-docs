@@ -1,5 +1,5 @@
 ---
-title: "OnDemand guide"
+title: "onBunya guide"
 ---
 
 # onBunya User Guide
