@@ -10,7 +10,7 @@ title: "onBunya guide"
 
 - [Troubleshooting](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/OnDemand-Guide.md#troubleshooting)
 - [Software](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/OnDemand-Guide.md#software)
-- [CryoSPARC](./Cryosparc.md)
+- [CryoSPARC](../Software/Cryosparc.md)
 - 
 
 ## What is onBunya?
@@ -36,7 +36,7 @@ Please be patient as the onBunya dashboard loads, it can take time (upto 1 minut
 ## onBunya Dashboard
 
 
-![onBunya top bar](../media/OOD-top-bar.png)
+![onBunya top bar](../../media/OOD-top-bar.png)
 
 
 The options on the dashboard, *Files*, *Jobs*, *Clusters*, *Interactive Apps*, *My Interactive Sessions*, let users interact in different ways with Bunya.
@@ -53,7 +53,7 @@ The options on the dashboard, *Files*, *Jobs*, *Clusters*, *Interactive Apps*, *
 
 ### Files
 
-![Files](../media/OOD-quota.png)
+![Files](../../media/OOD-quota.png)
 
 Users can check their quotas and limits under GPFS quota.
 
@@ -100,7 +100,7 @@ This is similar to a standard ssh session on one of Bunya's login nodes. Do not 
 
 ### Interactive Apps
 
-![Interactive Apps](../media/Interactive-Apps.png)
+![Interactive Apps](../../media/Interactive-Apps.png)
 
 Access to *Jupyter* notebook and Lab session (CPU and/or GPU) *GPU-Accelerated Desktop* (A16, L40 and L40s NVIDIA GPU only), *Desktop* preset resource flavours (CPU and/or GPU) and *Expert Desktop* (CPU and/or GPU, allows custom request of resources). 
 
@@ -123,14 +123,14 @@ Access to *Jupyter* notebook and Lab session (CPU and/or GPU) *GPU-Accelerated D
 
 Clicking on *Desktop* will bring up the following:
 
-![Compute Desktop 1](../media/Desktop1_2.png)![Compute Desktop 2](../media/Desktop-2_2.png)
+![Compute Desktop 1](../../media/Desktop1_2.png)![Compute Desktop 2](../../media/Desktop-2_2.png)
 
 Most options are preset depending on which flavour is chosen. Users can select how long to run.
 
 
 Clicking on *Expert Desktop* will bring up the following:
 
-![Expert Desktop 1](../media/Expert-Desktop-1_2.png)![Expert Desktop 2](../media/Expert-Desktop-2_2.png)
+![Expert Desktop 1](../../media/Expert-Desktop-1_2.png)![Expert Desktop 2](../../media/Expert-Desktop-2_2.png)
 
 Most of the options offer drop down menues for you to select an option. <br>
 * Please note that the *Partition* will display the default partition which is `debug`. This allows a maximum of 1 hour of time but also allows for shorter queue time. It is advised to keep the `debug` partition and the 1 hour time for work that will fit into this time limit.
@@ -140,18 +140,18 @@ Most of the options offer drop down menues for you to select an option. <br>
 
  * After clicking launch, the page will redirect to the *My Interactive Sessions* page, the job number and status will appear. The user may need to wait for the resources to be allocated, once allocated the job status will change to "Running".
 
-![Lauching desktop](../media/Launching-n.png)
+![Lauching desktop](../../media/Launching-n.png)
 
  * Click on Launch Desktop to open a new browser tab containing a desktop environment, users have file system access to all files (Caja), a terminal emulator (MATE terminal), internet browser access (Firefox), and other accessories such as text editors.
  * Users can use the terminal emulator to load modules, edit files, run jobs, etc. as normal on Bunya.
 
- ![Virtual desktop](../media/VirtualDesktop-n.png)
+ ![Virtual desktop](../../media/VirtualDesktop-n.png)
 
  * Once you are finished and the desktop is no longer needed close the browser tab with the desktop in your web browser.
  * Then you need to delete the job to free up the resources for other users.
  * Click the *Delete* button to finish your job and release the resources.
 
- ![Deleting desktop](../media/Launch-delete-n.png) 
+ ![Deleting desktop](../../media/Launch-delete-n.png) 
 
 
 ### My Interactive Sessions
@@ -252,13 +252,13 @@ Please note that GPU-Accelerated Desktops are only needed for hardware-accelerat
 
 The *Bunya Apps* can be found under *Applications* on the left in the top panel of the desktop. Please note that not all of these have been tested on Bunya. Please report any issues to rcc-support@uq.edu.au.
 
-![Bunya Apps](../media/onBunya-apps.png)
+![Bunya Apps](../../media/onBunya-apps.png)
 
 You can change the background, theme and fonts in the *System -> Preferences -> Appearance* menu.
 
 ### CryoSPARC
 
-[CryoSPARC Guide](./Cryosparc.md)
+[CryoSPARC Guide](../Software/Cryosparc.md)
 
 ### RStudio
 
@@ -266,26 +266,26 @@ You can change the background, theme and fonts in the *System -> Preferences -> 
 
 You can also use the associated R and packages on the command line. To do so, click on the terminal icon at the top. In the terminal type `module spider rstudio` to see the available versions, then `module load <desired version>`. Then you will have access to `R`, `Rscript` and `RStudio` commands.
 
-![Load RStudio](../media/onBunya-Rstudio-1.png)
+![Load RStudio](../../media/onBunya-Rstudio-1.png)
 
-![Run RStudio](../media/RStudio-2.png)
+![Run RStudio](../../media/RStudio-2.png)
 
 
 ### Gaussview (UQ only)
 
 To use *Gaussview* click on the terminal icon at the top. In the terminal type `module load gaussian/16.b.01-gv`. To check if there are newer versions available type `module available gaussian` and then select the version you wish to use. Then type `gv`.
 
-![Load Gaussian](../media/Gaussview-1.png)
+![Load Gaussian](../../media/Gaussview-1.png)
 
-![Run GaussView](../media/Gaussview-2.png)
+![Run GaussView](../../media/Gaussview-2.png)
 
 ### Mathematica (UQ only)
 
 To use *Mathematica* click on the terminal icon at the top. In the terminal type `module load mathematica/14.0`. To check if there are newer versions available type `module available mathematica` and then select the version you wish to use. Then type `Mathematica`.
 
-![Load Mathematica](../media/Mathematica-1.png)
+![Load Mathematica](../../media/Mathematica-1.png)
 
-![Run Mathematica](../media/Mathematica-2.png)
+![Run Mathematica](../../media/Mathematica-2.png)
 
 You can also select *Mathematica* from the *CVL Apps*, see above.
 
@@ -293,7 +293,7 @@ You can also select *Mathematica* from the *CVL Apps*, see above.
 
 To use *SPSS Statistics* click on the terminal icon at the top. In the terminal type `module load spss/statistics-27`. To check if there are newer versions available type `module available spss` and then select the version you wish to use. Then type `stats`.
 
-![Load SPSS](../media/SPSS-1.png)
+![Load SPSS](../../media/SPSS-1.png)
 
 ![Run SPSS](../media/SPSS-2.png)
 
