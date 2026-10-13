@@ -12,6 +12,10 @@ Before using Bunya you must have:
 - Multi-factor authentication configured.
 - Be a member of a Bunya Slurm accounting group.
 
+:::caution 
+Do not share passwords, ssh keys or your multifactor authentication.
+:::
+
 Connect using SSH:
 
 ```
