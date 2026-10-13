@@ -31,14 +31,15 @@ All sessions that share a connection are on the same Bunya login node as your fi
 
 ## Before you start
 
-> [!CAUTION]
-> ***While the shared connection is open, anyone who can use your local account on your computer can open a session on Bunya as you, without a password or MFA code.***
->
-> Only set this up on a computer where you have your own local account that nobody else uses.
-> Lock your screen when you step away from your computer.
-> Close the shared connection when you have finished working (see [below](#checking-and-closing-the-shared-connection)).
->
-> The rules in the [Bunya User Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#connecting) about not sharing passwords, SSH keys or MFA apply here too. Allowing another person to use your shared connection is a violation of UQ's policies and the Bunya conditions of access.
+:::caution
+ ***While the shared connection is open, anyone who can use your local account on your computer can open a session on Bunya as you, without a password or MFA code.***
+
+ Only set this up on a computer where you have your own local account that nobody else uses.
+ Lock your screen when you step away from your computer.
+ Close the shared connection when you have finished working (see [below](#checking-and-closing-the-shared-connection)).
+
+ The rules in the [Bunya User Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#connecting) about not sharing passwords, SSH keys or MFA apply here too. Allowing another person to use your shared connection is a violation of UQ's policies and the Bunya conditions of access.
+:::
 
 ## Which computers can use it?
 
@@ -85,8 +86,9 @@ Then make sure only you can read the file:
 chmod 600 ~/.ssh/config
 ```
 
-> [!NOTE]
-> If your `~/.ssh/config` file already has a `Host *` section, put the `Host bunya` lines **above** it. SSH uses the first value it finds for each setting. Or use a unique name instead of `bunya` to distinguish from a non-multiplexing connection.
+:::note
+ If your `~/.ssh/config` file already has a `Host *` section, put the `Host bunya` lines **above** it. SSH uses the first value it finds for each setting. Or use a unique name instead of `bunya` to distinguish from a non-multiplexing connection.
+:::
 
 ### What these lines do
 
@@ -104,9 +106,10 @@ You can make `ControlPersist` shorter (for example `15m`) if you prefer. A short
 
 ## Using it
 
-> [!IMPORTANT]
-> Always use the short name `bunya` in your commands.
-> If you type the full address, for example `ssh username@bunya.rcc.uq.edu.au`, the settings above are not used and you will be asked for your password and MFA code every time.
+:::important
+ Always use the short name `bunya` in your commands.
+ If you type the full address, for example `ssh username@bunya.rcc.uq.edu.au`, the settings above are not used and you will be asked for your password and MFA code every time.
+:::
 
 ### Log in the first time
 
@@ -180,8 +183,9 @@ You will see:
 Exit request sent.
 ```
 
-> [!WARNING]
-> `ssh -O exit bunya` closes **every** session that uses the shared connection. This includes any `scp`, `sftp` or `rsync` transfer that is still running. Wait for your transfers to finish first.
+:::warning
+ `ssh -O exit bunya` closes **every** session that uses the shared connection. This includes any `scp`, `sftp` or `rsync` transfer that is still running. Wait for your transfers to finish first.
+:::
 
 If you close the terminal window you used for your first login, the shared connection stays open in the background until the `ControlPersist` time runs out. Your other sessions keep working.
 
