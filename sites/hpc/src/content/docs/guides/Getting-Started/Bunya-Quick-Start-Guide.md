@@ -1,5 +1,5 @@
 ---
-title: "Bunya quick start guide"
+title: Bunya quick start guide
 ---
 
 # UQ Bunya HPC Quick Start Guide
