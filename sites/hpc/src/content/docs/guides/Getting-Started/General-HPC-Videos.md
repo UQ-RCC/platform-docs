@@ -1,3 +1,7 @@
+---
+title: 'Getting started with HPC and Linux'
+---
+
 # Getting started with HPC 
 
 ## General HPC information 
