@@ -295,5 +295,5 @@ To use *SPSS Statistics* click on the terminal icon at the top. In the terminal 
 
 ![Load SPSS](../../media/SPSS-1.png)
 
-![Run SPSS](../media/SPSS-2.png)
+![Run SPSS](../../media/SPSS-2.png)
 
