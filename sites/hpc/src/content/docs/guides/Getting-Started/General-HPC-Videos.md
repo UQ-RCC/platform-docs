@@ -38,3 +38,63 @@ Overview of how to move around the file system, change into other directories (c
 `cd` on its own will change into the user’s home directory<br>
 `cd ..` will go one directory up from the current one
 
+### Creating directories (folders) and files
+Overview of how to create new directories and files. New files are created with the editor nano.
+
+[mkdir, nano](https://youtu.be/GblyjdRnYe8?si=zwLibbAW0UCzmYo4)
+
+`mkdir` - creates a new directory.<br>
+`mkdir [PATH-TO-DIRECTORY]`<br>
+`nano` - Nano's ANOther editor<br>
+`nano [PATH-TO-FILE]`
+
+### vi editor
+Overview of how to use the vi editor to edit files.
+
+[vi](https://youtu.be/emARVKhbouA?si=lcHW-kvA-haJQymL)<br>
+Further commands within vi can be found here: http://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf
+
+`vi` – powerful text editor<br>
+`vi [PATH-TO-FILE]`
+
+`i` – insert mode<br>
+`Esc` – leave insert mode<br>
+`:w` – write/save file<br>
+`:q` – exit file<br>
+`:wq` – save and then exit file<br>
+`:q!` - override any changes and exit file without saving
+
+### File viewers
+Overview of file viewers available.
+
+[cat, more, less](https://youtu.be/Y_9gYsCi5V8?si=1QNfYjDODBQ-eqLc)
+
+`cat` – prints the whole file content to screen.<br>
+`cat [PATH-TO-FILE]`<br>
+`more` – prints a file to screen page by page, press space bar for next page.<br>
+`more [PATH-TO-FILE]`<br>
+`less` – prints a file to screen page by page. Scrollable, use page-down and page-up or arrow keys to navigate through the file. Press q to quit.<br>
+`less - [PATH-TO-FILE]`
+
+### Copying, moving (renaming) files and directories
+Overview of how to copy and move files and directories.
+
+[cp, mv](https://youtu.be/hEc2nKYR3R4?si=O2oso3DYy9te3stA)
+
+`cp` – copies a file or directory<br>
+`cp [PATH-TO-OLD-FILE] [PATH-TO-NEW-FILE]`<br>
+`cp –r [PATH-TO-OLD-DIRECTOR] [PATH-TO-NEW-DIRECTORY]`<br>
+`mv` – moves (renames) a file or directory<br>
+`mv [PATH-TO-OLD-FILE] [PATH-TO-NEW-FILE]`<br>
+`mv –r [PATH-TO-OLD-DIRECTOR] [PATH-TO-NEW-DIRECTORY]`
+
+### Removing files and directories
+Overview of how to remove files and directories.
+
+***IMPORTANT*** On Linux/Unix removing is for ever. There is no recovery.<br>
+[rm](https://youtu.be/p5uwYybHNzg?si=pUBRlgh94xD7Nch3)
+
+`rm` – removes (deletes) a file or directory. This is not reversible. Once deleted it is gone and cannot be recovered.<br>
+`rm [PATH-TO-FILE]`<br>
+`rm –r [PATH-TO-DIRECTORY]`
+
