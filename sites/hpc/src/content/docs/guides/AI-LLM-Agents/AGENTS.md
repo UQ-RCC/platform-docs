@@ -1,3 +1,7 @@
+---
+title: "Instructions for AI agents on Bunya (UQ Research Computing Centre)"
+---
+
 # Instructions for AI agents on Bunya (UQ Research Computing Centre)
 
 <!-- DRAFT v0.5, 2026-10-06. Not for publication until every TODO(RCC) below is resolved and removed. -->
