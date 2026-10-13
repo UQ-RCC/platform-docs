@@ -4,19 +4,20 @@ title: 'Connecting to Bunya'
 
 # Connecting to Bunya
 
->[!CAUTION]
->***Do not share passwords, ssh keys or your multifactor authentication.*** 
->
->This is a violation of UQ's cyber security policy and UQ's conditions of access to RCC infrastructure policy to which every Bunya user agrees to when applying for Bunya access.
->
->Violation of UQ's policies and conditions of access may lead to the suspension of access to RCC infrastructure (temporarily or permanently) and in some cases a report to the Integrity Unit for misconduct.
->
->Here are just some examples that are a violation of UQ's policies (there are others):
->
->* You allow another person to use your account to access Bunya. It makes no difference if they have used Bunya (i.e. ran jobs), or not. And it makes no difference if you logged them in and were there all the time.
->* Another user is struggling to get enough resources (jobs running) for their work. You allow them to use your account to be able to run more jobs. It does not matter if the other user is a fellow student, or you are their supervisor, or you are their friend, or you are their partner etc.
->* You are sharing your computer (work or home) with others and you have set up an ssh key for convenient access. If you are sharing a single local account on the computer, by default there is a single ssh key even if you are accessing different accounts. If you are sharing a computer, you must all have distinct ssh keys stored in separate accounts on the shared computer, or you should not use ssh keys but use passwords only. Best practice would be to set up separate accounts on the shared computer for each person.
->* You have your password or SSH key stored somewhere that another person can access it, and they can gain access to your DUO authenticator. Your account credentials are only to be used by yourself, and not to be shared with anybody including your supervisor or IT support staff.
+:::caution
+***Do not share passwords, ssh keys or your multifactor authentication.*** 
+
+This is a violation of UQ's cyber security policy and UQ's conditions of access to RCC infrastructure policy to which every Bunya user agrees to when applying for Bunya access.
+
+Violation of UQ's policies and conditions of access may lead to the suspension of access to RCC infrastructure (temporarily or permanently) and in some cases a report to the Integrity Unit for misconduct.
+
+Here are just some examples that are a violation of UQ's policies (there are others):
+
+* You allow another person to use your account to access Bunya. It makes no difference if they have used Bunya (i.e. ran jobs), or not. And it makes no difference if you logged them in and were there all the time.
+* Another user is struggling to get enough resources (jobs running) for their work. You allow them to use your account to be able to run more jobs. It does not matter if the other user is a fellow student, or you are their supervisor, or you are their friend, or you are their partner etc.
+* You are sharing your computer (work or home) with others and you have set up an ssh key for convenient access. If you are sharing a single local account on the computer, by default there is a single ssh key even if you are accessing different accounts. If you are sharing a computer, you must all have distinct ssh keys stored in separate accounts on the shared computer, or you should not use ssh keys but use passwords only. Best practice would be to set up separate accounts on the shared computer for each person.
+* You have your password or SSH key stored somewhere that another person can access it, and they can gain access to your DUO authenticator. Your account credentials are only to be used by yourself, and not to be shared with anybody including your supervisor or IT support staff.
+:::
 
 ## Passwords
 
