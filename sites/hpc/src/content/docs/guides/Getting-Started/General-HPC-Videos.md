@@ -1,8 +1,7 @@
 ---
-title: 'Getting started with HPC and Linux'
+title: Getting started with HPC and Linux
 ---
 
-# Getting started with HPC 
 
 ## General HPC information 
 
@@ -14,7 +13,7 @@ The short videos here contain general, and not Bunya specific, information on wh
 [Message of the day (info on current status and problems)](https://youtu.be/5INU-uQhVO4?si=fKa6peQdVPgOX4lM)<br>
 [Relative and absolute path (common problem in user scripts)](https://youtu.be/pD52omBBKBQ?si=LCBfeTemKAbUhmJA)<br>
 [How to load installed software](https://youtu.be/qdSRpcEnrHE?si=60b5jif3ku-tf2z3)<br>
-[Why no calculation should be run on the login nodes]( https://youtu.be/huL7ANioPmU?si=r08PlvPS2RBlGU_X)<br>
+[Why no calculation should be run on the login nodes](https://youtu.be/huL7ANioPmU?si=r08PlvPS2RBlGU_X)<br>
 
 ## Basic Linux/Unix commands
 
