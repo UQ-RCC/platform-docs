@@ -2,7 +2,7 @@
 title: 'Apply for Access to Bunya'
 ---
 
-## Applying for Access
+
 
 Access to Bunya HPC is not automatic.</br>
 Please refer to this link regarding [eligibility](../bunyaresourcedistribution).</br> 
