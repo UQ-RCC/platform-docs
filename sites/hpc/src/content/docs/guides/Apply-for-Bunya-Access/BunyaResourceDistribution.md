@@ -2,16 +2,15 @@
 title: "Eligibility for Bunya access"
 ---
 
-# Who gets what on Bunya
-
 Bunya is a UQ funded HPC facility for UQ researchers and operated by UQ staff.
 
 ## Who has contributed to Bunya
 UQ has funded Phase 1-4 of Bunya with contributions to Phase 1 from QCIF and the Institute for Molecular Biosciences. Individual 
 research groups and external institutions have made contributions to Bunya. 
 
->[!IMPORTANT]
->**No UQ researchers or UQ groups have exclusive or special access to Bunya resources, such as partitions, queues, or compute nodes.**
+:::caution[IMPORTANT]
+No UQ researchers or UQ groups have exclusive or special access to Bunya resources, such as partitions, queues, or compute nodes.
+:::
 
 ## Who has access to Bunya
 Researchers from UQ and from UQ Approved Customers can apply for access to Bunya.
@@ -33,11 +32,12 @@ Workshops might be permitted if they are research training and participants are 
 
 ## Fair share
 
->[!IMPORTANT]
->**There are no allocations for users or groups on Bunya.**
+:::caution[IMPORTANT]
+There are no allocations for users or groups on Bunya.
+:::
 
 Bunya operates under a fair share model. Bunya does not operate under a merit system. 
-Please see [here](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/FairShare.md) for information on fair share.
+Please see [here](../Slurm/FairShare.md) for information on fair share.
 
 Fair share operates on a user basis. Accounting groups or their size do not affect a user's fair share. 
 Users in the same accounting group are not able to take/give fair share from/to another user in the same accounting group. 
