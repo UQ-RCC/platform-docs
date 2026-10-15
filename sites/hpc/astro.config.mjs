@@ -30,6 +30,7 @@ export default defineConfig({
           ]},
           { label: 'Slurm Queue Manager', items: [
             { label: 'Fair Share', slug: 'guides/slurm/fairshare'},
+            { label: 'Accounting Groups and Administration', slug: 'accounting-group-admin'},
             { label: 'Interactive Jobs', slug: 'guides/slurm/interactivejobs'},
             { label: 'Available Partitions', slug: 'guides/slurm/partitions'},
             { label: 'Available QoS', slug: 'guides/slurm/qos'},
