@@ -1,8 +1,7 @@
 ---
-title: "Basics tmux"
+title: Tmux
 ---
 
-# The tmux basics
 
 ## What is tmux ?
 
