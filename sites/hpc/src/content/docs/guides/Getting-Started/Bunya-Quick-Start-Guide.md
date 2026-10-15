@@ -6,11 +6,11 @@ title: UQ Bunya HPC Quick Start Guide
 
 Before using Bunya you must have:
 
-- [An approved Bunya account](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#applying-for-access).
+- [An approved Bunya account](../../apply-for-bunya-access/apply-for-access).
 - Multi-factor authentication configured.
 - Be a member of a Bunya Slurm accounting group.
 
-:::caution 
+:::danger 
 Do not share passwords, ssh keys or your multifactor authentication.
 :::
 
@@ -20,14 +20,14 @@ Connect using SSH:
 ssh username@bunya.rcc.uq.edu.au
 ```
 
-Alternatively, use **onBunya** ([the web-based portal)](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/OnDemand-Guide.md) for interactive applications such as Jupyter, RStudio and VS Code. 
+Alternatively, use **onBunya** ([the Web Interface)](../../onbunya/ondemand-guide) for interactive applications such as Jupyter, RStudio and VS Code. 
 
 Important:
 
 - VS Code and other IDEs are not permitted on Bunya login nodes
 - Remote tunnelling to Bunya is not permitted
 
-[More information](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#connecting).
+[More information](../../accessing-bunya/connecting-to-bunya).
 
 ---
 
@@ -50,13 +50,13 @@ Important:
 - Files in `/scratch/user` and `/scratch/project` that have not been accessed for 90 days may be automatically deleted.
 - Users should move important data to an appropriate long-term storage solution.
 
-For more information, including quotas on `/home` and `/scratch`, and appropriate usage of `/QRISdata` see the [Bunya data user guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-UserData-Guide.md) and the [RDM user guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/RDM-guide.md).
+For more information, including quotas on `/home` and `/scratch`, and appropriate usage of `/QRISdata` see the [Guide on User Data Spaces and Quotas](../../data/bunya-userdata-guide) and the [UQRDM Access on Bunya Guide](../../data/rdm-guide.md).
 
 ---
 
 ## 3. Load Software Modules
 
-Bunya uses software modules, see [here](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#software) for more information.
+Bunya uses software modules, see [here](../../software/softwaremodules) for more information.
 
 Find available software, use keywords:
 
@@ -77,7 +77,7 @@ Check loaded modules:
 module list
 ```
 
-Many common research applications, compilers, MPI libraries and scientific software packages are available through modules. For a compact list of Bunya software modules and onBunya applications see [here](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/List-of-Software.md).
+Many common research applications, compilers, MPI libraries and scientific software packages are available through modules. For a compact list of Bunya software modules and onBunya applications see [here](../../software/list-of-software).
  
 ---
 
@@ -87,7 +87,7 @@ Bunya uses the **Slurm** workload manager for scheduling jobs.
 
 Do not run computational workloads on the login nodes. Interactive work, including software installations, software compilations, quick tests, should be performed inside an allocated job. 
 
-[Example interactive session](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#interactive-jobs-1):
+[Example interactive session](../../slurm/interactivejobs#interactive-jobs-1):
 
 ```
 salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=1 --mem=5G --job-name=CHANGE-ME --time=01:00:00 --partition=general --qos=debug --account=AccountString srun --export=PATH,TERM,HOME,LANG --pty /bin/bash -l
@@ -98,7 +98,7 @@ salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=1 --mem=5G --job-name=CHANG
 
 ## 5. Submit your first batch job
 
-For information on all the different options for Slurm scripts see [here](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#slurm-scripts)
+For information on all the different options for Slurm scripts see [here](../../slurm/exampleslurmscripts)
 
 Create a script called `hello.slurm`:
 
@@ -140,7 +140,7 @@ The output will be in `slurm-JobID.output`.
 
 See example scripts for [CPU single node](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#simple-script-for-cpus-and-single-node), [CPU MPI](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#simple-mpi-script-using-192-cores-as-an-example-using---ntasks-will-spread-the-job-over-multiple-nodes-where-there-is-space), [job array](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#job-arrays).
 
-Please check available [partitions](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#available-partitions-and-nodes) and associated hardware and available [QoS](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#qos-use-and-limits) and their limits.
+Please check available [partitions](../../slurm/partitions) and associated hardware and available [QoS](../../slurm/qos) and their limits.
  
 ---
 
@@ -189,7 +189,7 @@ source $ROOTMINIFORGE/etc/profile.d/conda.sh
 conda create -n myenv python=3.11
 conda activate myenv
 ```
-For guidance on managing Conda environments on Bunya see the [Conda guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/conda-environment.md).
+For guidance on managing Conda environments on Bunya see the [Conda guide](../../software/conda-environment).
 
 ---
 
