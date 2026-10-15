@@ -1,8 +1,10 @@
 ---
-title: "Eligibility for Bunya access"
+title: "Eligibility for Bunya Access"
 ---
-
+<br>
+<br>
 Bunya is a UQ funded HPC facility for UQ researchers and operated by UQ staff.
+<br>
 
 ## Who has contributed to Bunya
 UQ has funded Phase 1-4 of Bunya with contributions to Phase 1 from QCIF and the Institute for Molecular Biosciences. Individual 
