@@ -1,15 +1,14 @@
 ---
-title: 'Connecting to Bunya'
+title: Connecting to Bunya
 ---
 
-# Connecting to Bunya
 
 :::danger[Warning]
 ***Do not share passwords, ssh keys or your multifactor authentication.*** 
 
 This is a violation of UQ's cyber security policy and UQ's conditions of access to RCC infrastructure policy to which every Bunya user agrees to when applying for Bunya access.
 
-Violation of UQ's policies and conditions of access may lead to the suspension of access to RCC infrastructure (temporarily or permanently) and in some cases a report to the Integrity Unit for misconduct.
+**Violation of UQ's policies and conditions of access may lead to the suspension of access to RCC infrastructure (temporarily or permanently) and in some cases a report to the Integrity Unit for misconduct.**
 
 Here are just some examples that are a violation of UQ's policies (there are others):
 
@@ -33,7 +32,7 @@ Multi-factor authentication must also be configured. See below.
 ## "onBunya only" users
 
 
-:::note
+:::note[First Time Bunya Users]
 We get it, but sometimes you need to use the command line to get things done.<br>
 
 Even if you want to use onBunya exclusively, you will need to login using a direct ssh method when you access Bunya for the first time. <br>
