@@ -4,7 +4,7 @@ title: 'Connecting to Bunya'
 
 # Connecting to Bunya
 
-:::caution
+:::danger[Warning]
 ***Do not share passwords, ssh keys or your multifactor authentication.*** 
 
 This is a violation of UQ's cyber security policy and UQ's conditions of access to RCC infrastructure policy to which every Bunya user agrees to when applying for Bunya access.
@@ -66,7 +66,7 @@ This list shows examples of not permitted methods. By default, unless listed abo
 
 ## Command line SSH Access to Bunya
 
-Set 1 of the [Training resources](https://www.qcif.edu.au/training/hpc-training-resources/) explains how to use Putty to connect to a HPC with the basics found [here](https://youtu.be/oP_5JJrMm1U). To connect to Bunya please use:
+Set 1 of the [Training resources](https://rcc.uq.edu.au/training-support/training-videos/hpc-training-videos) explains how to use Putty to connect to a HPC with the basics found [here](https://youtu.be/oP_5JJrMm1U). To connect to Bunya please use:
 
 Hostname: bunya.rcc.uq.edu.au<br>
 Port: 22
@@ -121,7 +121,7 @@ Some network devices and firewalls may terminate inactive ssh connections. To he
 
 ### SSH multiplexing
 
-SHH multiplexing allows multiple and subsequent sessions to use the same initial ssh connection without having to authenticate again. See the [guide on SSH multiplexing](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-SSH-Multiplexing-Guide.md) for more details.
+SHH multiplexing allows multiple and subsequent sessions to use the same initial ssh connection without having to authenticate again. See the [guide on SSH multiplexing](../bunya-ssh-multiplexing) for more details.
 
 ### VS Code and other IDEs
 
