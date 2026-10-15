@@ -58,10 +58,23 @@ export default defineConfig({
             { label: 'UQRDM Access on Bunya', slug: 'guides/data/rdm-guide'},
           ]},
 //          
-          { label: 'Software on Bunya', items: [{ autogenerate: { directory: 'guides/Software'} }
+          { label: 'Software on Bunya', items: [
+            { label: 'List of Available Software', slug: 'guides/software/list-of-software'},
+            { label: 'Using Available Software Modules', slug: 'guides/software/softwaremodules'},
+            { label: 'Conda on Bunya', slug: 'guides/software/conda-environment'},
+            { label: 'Building Your Own Software and Compilers', slug: 'guides/software/buildingsoftwarecompilers'},
+            { label: 'Software Containers', slug: 'guides/software/softwarecontainers'},
+            { label: 'Apptainer (Singularity)', slug: 'guides/software/basics-apptainer'},
+            { label: 'CryoSparc', slug: 'guides/software/cryosparc'},
+            { label: 'Available R versions', slug: 'guides/software/basics-r-versions'},
+            { label: 'ASReml', slug: 'guides/software/basics-asreml'},
           ]},
 //          
-          { label: 'AI and LLM on Bunya', items: [{ autogenerate: { directory: 'guides/AI-LLM-Agents'} }] },
+          { label: 'AI and LLM on Bunya', items: [
+            { label: 'AI LLM Guide', slug: 'guides/ai-llm-agents/ai-llm-guide'},
+//            { label: 'AGENT.md', slug: 'guides/ai-llm-agents/agents'},
+          ]},
+//          
           ]},
 //        
         { label: 'Policy', items: [
