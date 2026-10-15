@@ -16,25 +16,25 @@ export default defineConfig({
         { label: 'Overview', slug: 'overview' },
         { label: 'Bunya updates', slug: 'bunya-updates' },
         { label: 'Guides', items: [
-          
+//          
           { label: 'Getting Access', items: [
             { label: 'Access Eligibility', slug: 'guides/apply-for-bunya-access/bunyaresourcedistribution'},
             { label: 'Apply for Access', slug: 'guides/apply-for-bunya-access/apply-for-access'},
           ]},
-          
+//          
           { label: 'Getting Started', items: [
             { label: 'Bunya Quick Start Guide', slug: 'guides/getting-started/bunya-quick-start-guide'},
             { label: 'Bunya Hardware', slug: 'guides/getting-started/bunyahardware'},
             { label: 'Intro to HPC and Linux Videos', slug: 'guides/getting-started/general-hpc-videos'},
           ]},
-          
+//          
           { label: 'onBunya Web Interface', items: [
             { label: 'onBunya Guide', slug: 'guides/onbunya/ondemand-guide'},
           ]},
-          
+//          
           { label: 'Slurm Queue Manager', items: [
             { label: 'Fair Share', slug: 'guides/slurm/fairshare'},
-            { label: 'Accounting Groups and Administration', slug: 'accounting-group-admin'},
+            { label: 'Accounting Groups and Administration', slug: 'guides/slurm/accounting-group-admin'},
             { label: 'Interactive Jobs', slug: 'guides/slurm/interactivejobs'},
             { label: 'Available Partitions', slug: 'guides/slurm/partitions'},
             { label: 'Available QoS', slug: 'guides/slurm/qos'},
@@ -44,12 +44,12 @@ export default defineConfig({
             { label: 'Slurm Tips', slug: 'guides/slurm/slurm-tips'},
             { label: 'MPI Testing for Experts Only', slug: 'guides/slurm/expert-only-mpi-testing'},
           ]},
-          
+//          
           { label: 'Software on Bunya', items: [{ autogenerate: { directory: 'guides/Software'} }] },
           { label: 'Data on Bunya', items: [{ autogenerate: { directory: 'guides/Data'} }] },
           { label: 'AI and LLM on Bunya', items: [{ autogenerate: { directory: 'guides/AI-LLM-Agents'} }] },
           ]},
-        
+//        
         { label: 'Policy', items: [
           { label: 'Overview', slug: 'policy/policies'},
           { label: 'Conditions of Access', items: [{ autogenerate: { directory: 'policy/Conditions-of-Access'} }] }, 
