@@ -1,19 +1,7 @@
 ---
-title: "Bunya SSH multiplexing guide"
+title: Bunya SSH multiplexing guide
 ---
 
-# SSH multiplexing on Bunya
-
-## Quick links
-
-- [What is SSH multiplexing?](#what-is-ssh-multiplexing)
-- [Before you start](#before-you-start)
-- [Which computers can use it?](#which-computers-can-use-it)
-- [Setting it up (Mac, Linux and WSL)](#setting-it-up-mac-linux-and-wsl)
-- [Using it](#using-it)
-- [Checking and closing the shared connection](#checking-and-closing-the-shared-connection)
-- [PuTTY users](#putty-users)
-- [Troubleshooting](#troubleshooting)
 
 ## What is SSH multiplexing?
 
@@ -38,7 +26,7 @@ All sessions that share a connection are on the same Bunya login node as your fi
  Lock your screen when you step away from your computer.
  Close the shared connection when you have finished working (see [below](#checking-and-closing-the-shared-connection)).
 
- The rules in the [Bunya User Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#connecting) about not sharing passwords, SSH keys or MFA apply here too. Allowing another person to use your shared connection is a violation of UQ's policies and the Bunya conditions of access.
+ The rules in [Connecting to Bunya](../connecting-to-bunya) about not sharing passwords, SSH keys or MFA apply here too. Allowing another person to use your shared connection is a violation of UQ's policies and the Bunya conditions of access.
 :::
 
 ## Which computers can use it?
@@ -117,7 +105,7 @@ You can make `ControlPersist` shorter (for example `15m`) if you prefer. A short
 ssh bunya
 ```
 
-Enter your password and MFA code as normal. See the [MFA section of the Bunya User Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#bunya-enforces-mfa-multi-factor-authentication) if you need help with this step.
+Enter your password and MFA code as normal. See the [MFA section of Connecting to Bunya](../connecting-to-bunya/#bunya-enforces-mfa-multi-factor-authentication) if you need help with this step.
 
 ### Open more sessions
 
@@ -224,7 +212,7 @@ ssh bunya
 
 ### Bunya maintenance days
 
-Bunya is taken offline for maintenance on the second Tuesday of February, May, August and November. Your shared connection will be closed. Log in again once Bunya is back. See [When Bunya is down for maintenance](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#when-bunya-is-down-for-maintenance).
+Bunya is taken offline for maintenance on the second Tuesday of February, May, August and November. Your shared connection will be closed. Log in again once Bunya is back. See [When Bunya is down for maintenance](../connecting-to-bunya/#when-bunya-is-down-for-maintenance).
 
 ### I want a separate connection that does not use the shared one
 
