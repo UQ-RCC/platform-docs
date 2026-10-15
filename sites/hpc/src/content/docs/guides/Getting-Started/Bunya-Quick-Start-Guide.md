@@ -50,7 +50,7 @@ Important:
 - Files in `/scratch/user` and `/scratch/project` that have not been accessed for 90 days may be automatically deleted.
 - Users should move important data to an appropriate long-term storage solution.
 
-For more information, including quotas on `/home` and `/scratch`, and appropriate usage of `/QRISdata` see the [Guide on User Data Spaces and Quotas](../../data/bunya-userdata-guide) and the [UQRDM Access on Bunya Guide](../../data/rdm-guide.md).
+For more information, including quotas on `/home` and `/scratch`, and appropriate usage of `/QRISdata` see the [Guide on User Data Spaces and Quotas](../../data/bunya-userdata-guide) and the [UQRDM Access on Bunya Guide](../../data/rdm-guide).
 
 ---
 
@@ -87,12 +87,12 @@ Bunya uses the **Slurm** workload manager for scheduling jobs.
 
 Do not run computational workloads on the login nodes. Interactive work, including software installations, software compilations, quick tests, should be performed inside an allocated job. 
 
-[Example interactive session](../../slurm/interactivejobs#interactive-jobs-1):
+[Example interactive session](../../slurm/interactivejobs/#interactive-jobs-1):
 
 ```
 salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=1 --mem=5G --job-name=CHANGE-ME --time=01:00:00 --partition=general --qos=debug --account=AccountString srun --export=PATH,TERM,HOME,LANG --pty /bin/bash -l
 ```
-- Change *AccountString* to your assigned [AccountString](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#what-is-my-accountstring-)
+- Change *AccountString* to your assigned [AccountString](../../slurm/interactivejobs/#what-is-my-accountstring-)
 
 ---
 
@@ -123,7 +123,7 @@ echo "Hello from Bunya"
 hostname
 date
 ```
-- Change *AccountString* to your assigned [AccountString](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#what-is-my-accountstring-)
+- Change *AccountString* to your assigned [AccountString](../../slurm/interactivejobs/#what-is-my-accountstring-)
 
 Submit the job:
 
