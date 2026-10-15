@@ -31,13 +31,13 @@ Please be patient as the onBunya dashboard loads, it can take time (upto 1 minut
 
 The options on the dashboard, *Files*, *Jobs*, *Clusters*, *Interactive Apps*, *My Interactive Sessions*, let users interact in different ways with Bunya.
 
->[!NOTE]
->If you are accessing Bunya _for the very first time_ via onBunya,
->you should be prompted with a link to *Open Shell to create home directory*
->
->Click the link and that will pop up a browser window to trigger the creation of your home directory.
->Future logins to onBunya will work as described herein.
+:::note
+If you are accessing Bunya _for the very first time_ via onBunya,
+you should be prompted with a link to *Open Shell to create home directory*
 
+Click the link and that will pop up a browser window to trigger the creation of your home directory.
+Future logins to onBunya will work as described herein.
+:::
 
 **Interactive Apps** is the easiest way to set up an interactive session a Bunya CPU or GPU node. Please see below for more details.
 
@@ -73,19 +73,20 @@ This is similar to a standard ssh session on one of Bunya's login nodes. Do not 
 
 #### Problems with onBunya desktops launching may be a "you problem"
 
->[!NOTE]
->
->If you get a `Could not connect to the session bus: Failed to connect ...` error, then you probably have initialised a conda environment.</br>
->If you have the conda initialisation in your `.bashrc` file then you cannot use Open OnDemand.</br>
->To use the virtual desktop in Open OnDemand, you need to have "clean" `.bashrc` file. </br>
->The easiest way to clean it is to run </br>
+:::note
+
+If you get a `Could not connect to the session bus: Failed to connect ...` error, then you probably have initialised a conda environment.</br>
+If you have the conda initialisation in your `.bashrc` file then you cannot use Open OnDemand.</br>
+To use the virtual desktop in Open OnDemand, you need to have "clean" `.bashrc` file. </br>
+The easiest way to clean it is to run </br>
 `conda init --reverse` </br>
-></br></br>
->If you get errors like `[websockify]: failed to launch!`, then you have probably automatically loaded a base conda that includes a dbus package. </br>
->Diagnose with `conda list | grep dbus` </br>
->Please stop loading conda environments automatically in your .bashrc </br>
-></br>
->Please read the [Conda on Bunya Guide](../../software/conda-environment) to set up your conda environment. </br>
+</br></br>
+If you get errors like `[websockify]: failed to launch!`, then you have probably automatically loaded a base conda that includes a dbus package. </br>
+Diagnose with `conda list | grep dbus` </br>
+Please stop loading conda environments automatically in your .bashrc </br>
+</br>
+Please read the [Conda on Bunya Guide](../../software/conda-environment) to set up your conda environment. </br>
+:::
 
 
 ### Interactive Apps
