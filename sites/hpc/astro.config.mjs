@@ -38,7 +38,7 @@ export default defineConfig({
             { label: 'Interactive Jobs', slug: 'guides/slurm/interactivejobs'},
             { label: 'Available Partitions', slug: 'guides/slurm/partitions'},
             { label: 'Available QoS', slug: 'guides/slurm/qos'},
-            { label: 'Batch Jobs', slug: 'batchjobs'},
+            { label: 'Batch Jobs', slug: 'guides/slurm/batchjobs'},
             { label: 'Example Batch Slurm Scripts', slug: 'guides/slurm/exampleslurmscripts'},
             { label: 'Monitoring and Deleting Jobs', slug: 'guides/slurm/monitoringjobs'},
             { label: 'Slurm Tips', slug: 'guides/slurm/slurm-tips'},
