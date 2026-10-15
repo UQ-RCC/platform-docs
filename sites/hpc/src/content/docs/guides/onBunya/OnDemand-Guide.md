@@ -1,24 +1,14 @@
 ---
-title: "onBunya guide"
+title: onBunya Guide
 ---
 
-# onBunya User Guide
-
-## Table of Contents 
-
-(To be completed)</br>
-
-- [Troubleshooting](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/OnDemand-Guide.md#troubleshooting)
-- [Software](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/OnDemand-Guide.md#software)
-- [CryoSPARC](../Software/Cryosparc.md)
-- 
 
 ## What is onBunya?
 
 onBunya is a web portal that provides access to the Bunya supercomputer, allowing users to submit and monitor jobs, manage files, and use a desktop environment to run graphical jobs using software such as Jupyter.
 
 ## onBunya applications list
-[List of onBunya applications](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/List-of-Software.md#onbunya-applications)
+[List of onBunya applications](../../software/list-of-software/#onbunya-applications)
 
 ## Accessing onBunya
 
@@ -27,7 +17,7 @@ Users cannot use onBunya unless they already have Bunya access. To apply for acc
 >[!NOTE]
 >
 >Even if you want to use onBunya exclusively, you will need to login using the direct ssh method when you access Bunya for the first time. Doing this will trigger the proper setup of your account.
->See [here](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#how-to-connect) for details.
+>See [here](../../accessing-bunya/connecting-to-bunya) for details.
 
 Access onBunya [here](https://onbunya.rcc.uq.edu.au), users will need to log in with AAF, and may receive an MFA prompt.
 
@@ -95,7 +85,7 @@ This is similar to a standard ssh session on one of Bunya's login nodes. Do not 
 >Diagnose with `conda list | grep dbus` </br>
 >Please stop loading conda environments automatically in your .bashrc </br>
 ></br>
->Please read the [Conda on Bunya Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/conda-environment.md) to set up your conda environment. </br>
+>Please read the [Conda on Bunya Guide](../../software/conda-environment) to set up your conda environment. </br>
 
 
 ### Interactive Apps
@@ -134,7 +124,7 @@ Clicking on *Expert Desktop* will bring up the following:
 
 Most of the options offer drop down menues for you to select an option. <br>
 * Please note that the *Partition* will display the default partition which is `debug`. This allows a maximum of 1 hour of time but also allows for shorter queue time. It is advised to keep the `debug` partition and the 1 hour time for work that will fit into this time limit.
-* For longer or more substantial work please select the `general` partition or one of `gpu_cuda` (H100, A100, A100 MIG, L40), `gpu_viz` (L40 only) or `gpu_rocm` (AMD Mi210) partitions. Please consult the [Bunya user guide.](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md) for more information.
+* For longer or more substantial work please select the `general` partition or one of `gpu_cuda` (H100, A100, A100 MIG, L40s), `gpu_viz` (L40, L40s) or `gpu_rocm` (Mi210, Mi300x, Mi355x) partitions. Please consult the [Bunya user guide.](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md) for more information.
 * For most cases you should always choose *Number of Tasks (MPI only, otherwise leasve as 1)* as 1. Even for MPI, it is not advised to use interactive jobs or OOD desktops for MPI work, unless you are an expert and are willing to invest in extensive testsing.
 
 
@@ -166,7 +156,7 @@ Most of the options offer drop down menues for you to select an option. <br>
 * If running on a GPU desktop, accelerated Matlab MUST be run with the -nosoftwareopengl argument on GPU, and non-accelerated Matlab MUST NOT.
 * If you have the conda initialisation in your `.bashrc` file then you cannot use Open OnDemand. To use the virutal desktop in Open OnDemand you need to have clean `.bashrc` file. The easiest was to clean it is to run <br>
 `conda init --reverse` <br>
-Please read the [Conda on Bunya Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/conda-environment.md) to set up your conda environment.
+Please read the [Conda on Bunya Guide](../../software/conda-environment) to set up your conda environment.
 
 ## Troubleshooting
 
@@ -182,7 +172,7 @@ There are limits to the amount of disk space and number of files in your home di
 
 ### You get a web page with an error message and a big red button on it 
 
-Please READ what it says, refer to the Note in this [section](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/OnDemand-Guide.md#onbunya-dashboard) above and follow the instructions to initialise your home directory _before_ using onBunya.
+Please READ what it says, refer to the Note in this [section](#onbunya-dashboard) above and follow the instructions to initialise your home directory _before_ using onBunya.
 
 ### Authentication Error
 
@@ -195,7 +185,7 @@ Refer to the  accessing Bunya section of the Bunya User Guide.
 
 You may have something in your .bashrc or your .bash_profile that is incompatible with your onBunya session launching.
 Candidates include loading modules that are graphics related and automatically initialising conda environments.
-Refer to the [conda environments user guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/conda-environment.md#important-warning-on-user-installed-conda) for details of the latter.
+Refer to the [conda environments user guide](../../software/conda-environment/#important-warning-on-user-installed-conda) for details of the latter.
 
 Debug this behaviour by searching for error messages in the logs for your desktop launcher.
 
@@ -258,7 +248,7 @@ You can change the background, theme and fonts in the *System -> Preferences -> 
 
 ### CryoSPARC
 
-[CryoSPARC Guide](../Software/Cryosparc.md)
+[CryoSPARC Guide](../../software/cryosparc)
 
 ### RStudio
 
