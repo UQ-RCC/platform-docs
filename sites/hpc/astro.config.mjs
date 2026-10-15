@@ -28,10 +28,10 @@ export default defineConfig({
           { label: 'onBunya Web Interface', items: [
             { label: 'onBunya Guide', slug: 'guides/onbunya/ondemand-guide'},
           ]},
-          { label: 'Slurm Queue Manager', items: [{ autogenerate: { directory: 'guides/slurm'} }] },
-          { label: 'Software on Bunya', items: [{ autogenerate: { directory: 'guides/software'} }] },
-          { label: 'Data on Bunya', items: [{ autogenerate: { directory: 'guides/data'} }] },
-          { label: 'AI and LLM on Bunya', items: [{ autogenerate: { directory: 'guides/ai-llm-agents'} }] },
+          { label: 'Slurm Queue Manager', items: [{ autogenerate: { directory: 'guides/Slurm'} }] },
+          { label: 'Software on Bunya', items: [{ autogenerate: { directory: 'guides/Software'} }] },
+          { label: 'Data on Bunya', items: [{ autogenerate: { directory: 'guides/Data'} }] },
+          { label: 'AI and LLM on Bunya', items: [{ autogenerate: { directory: 'guides/AI-LLM-Agents'} }] },
           ]},
         { label: 'Policy', items: [
           { label: 'Overview', slug: 'policy/policies'},
