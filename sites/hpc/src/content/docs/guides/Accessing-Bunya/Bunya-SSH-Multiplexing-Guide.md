@@ -19,7 +19,7 @@ All sessions that share a connection are on the same Bunya login node as your fi
 
 ## Before you start
 
-:::caution
+:::danger
  ***While the shared connection is open, anyone who can use your local account on your computer can open a session on Bunya as you, without a password or MFA code.***
 
  Only set this up on a computer where you have your own local account that nobody else uses.
