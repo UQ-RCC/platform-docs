@@ -26,7 +26,7 @@ title: Bunya Hardware
 - There are 3 AMD Mi355x GPU nodes (pecy5) with 8 Mi355x cards. Each Mi355x card has 288GB GPU RAM. 
 - For a full table of all available compute nodes and their features like GPU, Memory and CPUs see [here](../../slurm/partitions)
  
-- Users have a location in `/home` and `/scratch/user`. There are quotas on these locations for total GB _and_ total number of files. Refer to [Bunya UserData Guide](../../data/bunya-userdata-guide) 
+- Users have a location in `/home` and `/scratch/user`. There are quotas on these locations for total GB _and_ total number of files. Refer to [User Data Spaces and Quotas](../../data/bunya-userdata-guide) 
 - Users can run the command `rquota` to check on quotas and usage.
 - Users can request more space and files in `/scratch/user`. Email rcc-support@uq.edu.au for the application form.
 - Group leaders can request a shared scratch space for their group. Email rcc-support@uq.edu.au for the application form.
