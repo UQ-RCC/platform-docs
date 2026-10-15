@@ -1,5 +1,5 @@
 ---
-title: Bunya SSH multiplexing guide
+title: SSH Multiplexing
 ---
 
 
