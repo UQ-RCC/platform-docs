@@ -31,7 +31,7 @@ export default defineConfig({
           { label: 'Accessing Bunya', items: [
             { label: 'Connecting to Bunya', slug: 'guides/accessing-bunya/connecting-to-bunya'},
             { label: 'SSH Multiplexing', slug: 'guides/accessing-bunya/bunya-ssh-multiplexing-guide'},
-            { label: 'Tmux', slug: 'guides/accessing-bunya/basics-tumx'},
+            { label: 'Tmux', slug: 'guides/accessing-bunya/basics-tmux'},
           ]},
 //          
           { label: 'onBunya Web Interface', items: [
@@ -50,9 +50,17 @@ export default defineConfig({
             { label: 'Slurm Tips', slug: 'guides/slurm/slurm-tips'},
             { label: 'MPI Testing for Experts Only', slug: 'guides/slurm/expert-only-mpi-testing'},
           ]},
+//   
+          { label: 'Data on Bunya', items: [
+            { label: 'User Data Spaces and Quotas', slug: 'guides/data/bunya-userdata-guide'},
+            { label: 'Transferring Data', slug: 'guides/data/datatransfer'},
+            { label: 'Available Data Sets and Models', slug: 'guides/data/list-of-datasets'},
+            { label: 'UQRDM Access on Bunya', slug: 'guides/data/rdm-guide'},
+          ]},
 //          
-          { label: 'Software on Bunya', items: [{ autogenerate: { directory: 'guides/Software'} }] },
-          { label: 'Data on Bunya', items: [{ autogenerate: { directory: 'guides/Data'} }] },
+          { label: 'Software on Bunya', items: [{ autogenerate: { directory: 'guides/Software'} }
+          ]},
+//          
           { label: 'AI and LLM on Bunya', items: [{ autogenerate: { directory: 'guides/AI-LLM-Agents'} }] },
           ]},
 //        
