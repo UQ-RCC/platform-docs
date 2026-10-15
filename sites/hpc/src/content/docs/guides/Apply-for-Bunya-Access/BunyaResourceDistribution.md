@@ -7,7 +7,7 @@ Bunya is a UQ funded HPC facility for UQ researchers and operated by UQ staff.
 <br>
 
 ## Who has contributed to Bunya
-UQ has funded Phase 1-4 of Bunya with contributions to Phase 1 from QCIF and the Institute for Molecular Biosciences. Individual 
+UQ has funded Phase 1-5 of Bunya with contributions to Phase 1 from QCIF and the Institute for Molecular Biosciences. Individual 
 research groups and external institutions have made contributions to Bunya. 
 
 :::caution[IMPORTANT]
