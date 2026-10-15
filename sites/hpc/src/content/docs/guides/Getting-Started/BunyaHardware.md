@@ -1,8 +1,7 @@
 ---
-title: 'Bunya Hardware'
+title: Bunya Hardware
 ---
 
-# Bunya Hardware
 
 - Bunya has 113 AMD CPU nodes with 96 physical cores per compute node, 2 \* 48 core CPUs per node (roughly 10,600 cores) and 12 AMD CPU nodes with 256 physical cores per compute node, 2 \* 128 core CPUs per node (roughly 3,000 cores). Cores are requested by `--ntasks-per-node` or `--ntasks` and by `--ntasks-per-core=1`. 
 - The queue allows 2 \* 96 = 192 threads per compute node or 2 \* 256 = 512 threads per compute node (requested by `--cpus-per-task` and by keeping `--ntasks=1` or `--ntasks-per-node=1`)  
