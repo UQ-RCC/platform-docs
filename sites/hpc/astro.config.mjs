@@ -31,7 +31,7 @@ export default defineConfig({
           { label: 'Accessing Bunya', items: [
             { label: 'Connecting to Bunya', slug: 'guides/accessing-bunya/connecting-to-bunya'},
             { label: 'SSH Multiplexing', slug: 'guides/accessing-bunya/bunya-ssh-multiplexing-guide'},
-            { label: 'Tmux', slug: 'guides/accessing-bunya/basic-tumx'},
+            { label: 'Tmux', slug: 'guides/accessing-bunya/basics-tumx'},
           ]},
 //          
           { label: 'onBunya Web Interface', items: [
