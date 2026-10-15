@@ -5,16 +5,17 @@ title: 'Apply for Access to Bunya'
 ## Applying for Access
 
 Access to Bunya HPC is not automatic.</br>
-Please refer to this link regarding [eligibility](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/BunyaResourceDistribution.md#who-has-access-to-bunya).</br> 
+Please refer to this link regarding [eligibility](../bunyaresourcedistribution).</br> 
 You need to apply by using [this form](https://forms.office.com/r/87rfgvxDnz).
 
->[!NOTE]
->Staff and HDR students are required to apply with their staff account, undergradute and postgraduate (non-HDR) students should apply with their student account. Those applying under a student account will be asked to provide an end date for their access.
->
->You will need to provide current SIX (6) DIGIT FoR code(s).
->If you do not know what a FoR code is or do not have one please contact your supervisor.
->
->It can take up to one week for a new user access to be processed. 
+:::note
+Staff and HDR students are required to apply with their staff account, undergradute and postgraduate (non-HDR) students should apply with their student account. Those applying under a student account will be asked to provide an end date for their access.
+
+You will need to provide 2020 six (6) digit Field of Research (FoR) code(s).
+If you do not know what a FoR code is or do not have one please contact your supervisor.
+
+It can take up to one week for a new user access to be processed. 
+:::
 
 ## Introduction to HPC Training
 
