@@ -39,7 +39,7 @@ There are no allocations for users or groups on Bunya.
 :::
 
 Bunya operates under a fair share model. Bunya does not operate under a merit system. 
-Please see [here](../../Slurm/FairShare.md) for information on fair share.
+Please see [here](../../slurm/fairshare) for information on fair share.
 
 Fair share operates on a user basis. Accounting groups or their size do not affect a user's fair share. 
 Users in the same accounting group are not able to take/give fair share from/to another user in the same accounting group. 
