@@ -72,7 +72,7 @@ export default defineConfig({
 //          
           { label: 'AI and LLM on Bunya', items: [
             { label: 'AI LLM Guide', slug: 'guides/ai-llm-agents/ai-llm-guide'},
-            { label: 'AGENT.md', slug: 'guides/ai-llm-agents/agents'},
+            { label: 'AGENTS.md', slug: 'guides/ai-llm-agents/agents'},
           ]},
 //          
           ]},
