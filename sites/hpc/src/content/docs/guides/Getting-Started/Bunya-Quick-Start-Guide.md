@@ -138,7 +138,7 @@ squeue
 ```
 The output will be in `slurm-JobID.output`.
 
-See example scripts for [CPU single node](../../slurm/exampleslurmscripts/#simple-script-for-cpus-and-single-node), [CPU MPI](../../slurm/exampleslurmscript#simple-mpi-script-using-192-cores-as-an-example-using---ntasks-will-spread-the-job-over-multiple-nodes-where-there-is-space), [job array](../../slurm/exampleslurmscript#job-arrays).
+See example scripts for [CPU single node](../../slurm/exampleslurmscripts/#simple-script-for-cpus-and-single-node), [CPU MPI](../../slurm/exampleslurmscripts#simple-mpi-script-using-192-cores-as-an-example-using---ntasks-will-spread-the-job-over-multiple-nodes-where-there-is-space), [job array](../../slurm/exampleslurmscripts#job-arrays).
 
 Please check available [partitions](../../slurm/partitions) and associated hardware and available [QoS](../../slurm/qos) and their limits.
  
@@ -162,7 +162,7 @@ Example GPU request:
 ```
 Only request GPUs you can actively use. Jobs that leave GPUs idle are automatically terminated.
 
-See example scripts for [Cuda GPUs](../../slurm/exampleslurmscript#simple-script-for-cuda-gpus) and [ROCM GPUs](../../slurm/exampleslurmscript#simple-script-for-amd-rocm-gpus).
+See example scripts for [Cuda GPUs](../../slurm/exampleslurmscripts#simple-script-for-cuda-gpus) and [ROCM GPUs](../../slurm/exampleslurmscripts#simple-script-for-amd-rocm-gpus).
 
 ---
 
