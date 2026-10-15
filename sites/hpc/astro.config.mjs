@@ -28,7 +28,18 @@ export default defineConfig({
           { label: 'onBunya Web Interface', items: [
             { label: 'onBunya Guide', slug: 'guides/onbunya/ondemand-guide'},
           ]},
-          { label: 'Slurm Queue Manager', items: [{ autogenerate: { directory: 'guides/Slurm'} }] },
+          { label: 'Slurm Queue Manager', items: [
+            { label: 'Fair Share', slug: 'guides/slurm/fairshare'},
+            { label: 'Interactive Jobs', slug: 'guides/slurm/interactivejobs'},
+            { label: 'Available Partitions', slug: 'guides/slurm/partitions'},
+            { label: 'Available QoS', slug: 'guides/slurm/qos'},
+            { label: 'Batch Jobs', slug: 'batchjobs'},
+            { label: 'Example Batch Slurm Scripts', slug: 'guides/slurm/exampleslurmscripts'},
+            { label: 'Monitoring and Deleting Jobs', slug: 'guides/slurm/monitoringjobs'},
+            { label: 'Slurm Tips', slug: 'guides/slurm/slurm-tips'},
+            { label: 'MPI Testing for Experts Only', slugh: 'guides/slurm/expert-only-mpi-testing'},
+          ]},
+          
           { label: 'Software on Bunya', items: [{ autogenerate: { directory: 'guides/Software'} }] },
           { label: 'Data on Bunya', items: [{ autogenerate: { directory: 'guides/Data'} }] },
           { label: 'AI and LLM on Bunya', items: [{ autogenerate: { directory: 'guides/AI-LLM-Agents'} }] },
