@@ -1,24 +1,6 @@
-/* Design tokens. Loaded before base.css and components.css.
-
-   Brand ramp: hue 271 lightness ladder, step 700 = UQ purple #51247A.
-
-   customCss is injected unlayered and so beats Starlight's @layer
-   starlight.base regardless of specificity. Any --sl-* var set for dark mode
-   must also be set for light, or the dark value applies in both. */
+/* XNAT design tokens. */
 
 :root {
-  --xnat-purple-50: #f5effb;
-  --xnat-purple-100: #e8dbf5;
-  --xnat-purple-200: #d2bae8;
-  --xnat-purple-300: #b48ed7;
-  --xnat-purple-400: #965ec9;
-  --xnat-purple-500: #7a37b9;
-  --xnat-purple-600: #632d95;
-  --xnat-purple-700: #51247a;
-  --xnat-purple-800: #3e1b5f;
-  --xnat-purple-900: #2c1244;
-  --xnat-purple-950: #1d0b2d;
-
   --xnat-radius-sm: 0.25rem;
   --xnat-radius-md: 0.5rem;
   --xnat-radius-lg: 0.75rem;
@@ -40,28 +22,14 @@
   --sl-line-height: 1.7;
 }
 
-/* Dark mode. accent-high carries prose links (10.1:1 on page background);
-   accent is used for focus rings and component button text (6.6:1);
-   accent-low is text-invert, drawn on accent (6.1:1). */
+/* Starlight defines gray-7 in light mode only. */
 :root {
-  --sl-color-accent-low: var(--xnat-purple-900);
-  --sl-color-accent: var(--xnat-purple-300);
-  --sl-color-accent-high: var(--xnat-purple-200);
-
-  /* Starlight defines gray-7 in light mode only; components reaching for it
-     fell back to the page background and rendered without a surface. */
   --xnat-surface: var(--sl-color-gray-6);
   --xnat-surface-raised: var(--sl-color-gray-5);
   --xnat-surface-border: var(--sl-color-gray-5);
 }
 
-/* Light mode. accent carries prose links (11.2:1 on page background) and is
-   also bg-accent, with white on it at 11.2:1. */
 :root[data-theme='light'] {
-  --sl-color-accent-low: var(--xnat-purple-100);
-  --sl-color-accent: var(--xnat-purple-700);
-  --sl-color-accent-high: var(--xnat-purple-800);
-
   --xnat-surface: var(--sl-color-gray-7);
   --xnat-surface-raised: #fff;
   --xnat-surface-border: var(--sl-color-gray-5);

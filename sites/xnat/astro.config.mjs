@@ -133,6 +133,7 @@ export default defineConfig({
         'Storing, managing and analysing de-identified imaging data for UQ projects and collaborators',
       locales: { root: { label: 'English', lang: 'en-AU' } },
       customCss: [
+        '../../shared/styles/theme.css',
         './src/styles/tokens.css',
         './src/styles/base.css',
         '../../shared/styles/navbar.css',

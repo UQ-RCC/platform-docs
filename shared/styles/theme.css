@@ -1,0 +1,27 @@
+/* Colour theme shared by every site. */
+
+:root {
+  --theme-50: #f5effb;
+  --theme-100: #e8dbf5;
+  --theme-200: #d2bae8;
+  --theme-300: #b48ed7;
+  --theme-400: #965ec9;
+  --theme-500: #7a37b9;
+  --theme-600: #632d95;
+  --theme-700: #51247a;
+  --theme-800: #3e1b5f;
+  --theme-900: #2c1244;
+  --theme-950: #1d0b2d;
+}
+
+:root {
+  --sl-color-accent-low: var(--theme-900);
+  --sl-color-accent: var(--theme-300);
+  --sl-color-accent-high: var(--theme-200);
+}
+
+:root[data-theme='light'] {
+  --sl-color-accent-low: var(--theme-100);
+  --sl-color-accent: var(--theme-700);
+  --sl-color-accent-high: var(--theme-800);
+}
