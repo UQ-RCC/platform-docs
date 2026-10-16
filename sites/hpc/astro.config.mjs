@@ -8,7 +8,8 @@ export default defineConfig({
       title: 'UQ RCC HPC',
       locales: { root: { label: 'English', lang: 'en-AU' } },
       editLink: { baseUrl: 'https://github.com/UQ-RCC/platform-docs/edit/main/sites/hpc/' },
-      customCss: ['../../shared/styles/navbar.css'],
+      customCss: ['../../shared/styles/theme.css', '../../shared/styles/navbar.css'],
+      head: [{ tag: 'meta', attrs: { name: 'theme-color', content: '#51247A' } }],
       components: {
         ThemeSelect: '../../shared/components/ThemeSelect.astro',
       },
