@@ -1,8 +1,7 @@
 ---
-title: "Basics ASReml"
+title: "Using ASReml-R and ASReml-SA on Bunya"
 ---
 
-# Using ASReml-R and ASReml-SA on Bunya HPC
 
 `under construction  20260209`
 
