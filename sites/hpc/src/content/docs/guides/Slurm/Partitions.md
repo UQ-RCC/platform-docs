@@ -1,8 +1,7 @@
 ---
-title: 'Available partitions'
+title: 'Available Partitions'
 ---
 
-# Available partitions
 
 The available partitions on Bunya are
 ```
@@ -29,7 +28,7 @@ The available compute nodes on Bunya are listed in the table below. Please note 
 **gpu_viz** is used exclusively by onBunya. Users should not be submitting batch jobs via sbatch to the gpu_viz partition. The L40s GPUs are available through the gpu_cuda partition. <br>
 **ext_intersect** is exclusive for ACU users.
 
-See [Slurm tips](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Slurm-Tips.md) on how to target multiple partions and range of GPUs.
+See [Slurm tips](../slurm-tips) on how to target multiple partitions and range of GPUs.
 
 | Partition | Hostnames |  Count |  CPU Memory (MB) per node| CPUS per node| FEATURES | GRES per node| Charge Multiplier|
 |:---|:---|:---:|---:|:---:|:---|:---|---:|
@@ -60,9 +59,10 @@ See [Slurm tips](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Slurm-Tips.
 
 ## Maximum CPU resources per GPU
 
->[!IMPORTANT] 
->Users should be mindful of the CPU resources per node when requesting GPU resources. Over requesting CPU resources such as the number of CPUs and CPU ram can unintentionally block other GPUs on the same node being used as the CPU resources of other jobs cannot be accommodated even if GPUs are still free. This can lead to unnecessary wait time for other user's jobs and might lead to GPU resources being left idle. Users should request the resources that their job needs to run and not just arbitrary CPU resources or just always the same CPU resources. Users are required to check the resource utilisation of their jobs and adjust future job accordingly.
->Jobs that are found to not utilise the resources they have requested and are blocking free GPUs being used may be terminated.  
+:::caution[IMPORTANT] 
+Users should be mindful of the CPU resources per node when requesting GPU resources. Over requesting CPU resources such as the number of CPUs and CPU ram can unintentionally block other GPUs on the same node being used as the CPU resources of other jobs cannot be accommodated even if GPUs are still free. This can lead to unnecessary wait time for other user's jobs and might lead to GPU resources being left idle. Users should request the resources that their job needs to run and not just arbitrary CPU resources or just always the same CPU resources. Users are required to check the resource utilisation of their jobs and adjust future job accordingly.
+Jobs that are found to not utilise the resources they have requested and are blocking free GPUs being used may be terminated.  
+:::
 
 This table shows what are appropriate maximum CPU resource requests per GPU, depending on the GPU and GPU node.
 
