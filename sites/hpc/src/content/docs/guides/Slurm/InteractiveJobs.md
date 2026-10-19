@@ -6,16 +6,17 @@ title: 'Interactive Jobs'
 
 ## Do not run on the login nodes
 
->[!WARNING]
->Users are reminded that no computing task, no matter how quick or small, should be run on the login nodes. So no, the quick python or R or bash script or similar should NOT be just quickly run from the command line as it is so much more convenient. **All calculations, installations and file operations are required to be done on the compute nodes.**
->
->This includes software installations. Conda create, pip installs and R install.packages should be run via an interactive job not on the login nodes. Software installations using make and then make install (or cmake) especially are not suitable to be done on a login node. For these users should be careful choosing the correct architecture, see [here](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#how-to-build-your-own-software)
->
->Users can use interactive jobs which will give them that command line feel and flexibility and allow the use of graphical user interfaces. Users who need a Graphical User Interface (GUI) should consult the [onBunya User Guide](./OnDemand-Guide.md). 
->
->Users have access to a `debug` QoS for quick testing of new jobs and codes etc.
->
->Processes that should not be running on the login nodes may be terminated without explanation.
+:::caution[WARNING]
+Users are reminded that no computing task, no matter how quick or small, should be run on the login nodes. So no, the quick python or R or bash script or similar should NOT be just quickly run from the command line as it is so much more convenient. **All calculations, installations and file operations are required to be done on the compute nodes.**
+
+This includes software installations. Conda create, pip installs and R install packages should be run via an interactive job not on the login nodes. Software installations using make and then make install (or cmake) especially are not suitable to be done on a login node. For these users should be careful choosing the correct architecture, see [here](../../software/buildingsoftwarecompilers)
+
+Users can use interactive jobs which will give them that command line feel and flexibility and allow the use of graphical user interfaces. Users who need a Graphical User Interface (GUI) should consult the [onBunya User Guide](../../onbunya/ondemand-guide). 
+
+Users have access to a `debug` QoS for quick testing of new jobs and codes etc.
+
+Processes that should not be running on the login nodes may be terminated without explanation.
+:::
 
 ## Interactive jobs
 
@@ -76,7 +77,7 @@ For an interactive session on the `gpu_rocm` or `gpu_cuda`  partitions you will 
 
 To target a particular GPU RAM in the `gpu_cuda` partition, especially an A100 and H100 MIG slice add `--constraint=cuda40gb`, or `--constraint=cuda80gb` to target a card with the full GPU RAM to the `salloc` part.
 
-See [here](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#available-partitions-and-nodes) for a full list of partitions, QoS, GPU types and other features.
+See [available partitions](../partitions) and [available QoS](../qos) for a full list of partitions, QoS, GPU types and other features.
 
-See [here](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Slurm-Tips.md) for tips on how to target different sets of GPUs and submit short jobs on Bunya.
+See [here](../slurm-tips) for tips on how to target different sets of GPUs and submit short jobs on Bunya.
 
