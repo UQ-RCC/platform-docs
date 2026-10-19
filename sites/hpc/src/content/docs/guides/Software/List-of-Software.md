@@ -1,8 +1,7 @@
 ---
-title: "List of software"
+title: "List of Software on Bunya"
 ---
 
-# List of Additional Software on Bunya
 
 **Updated: 26 August 2026**
 
@@ -13,23 +12,23 @@ Most software, even some things that would normally be considered part of the st
 Access to this software is facilitated by the *modules* mechanism.
 Some software is made available through GUI menus in [onBunya](https://onbunya.rcc.uq.edu.au)
 
-For more information, please refer to these documents
-- [Bunya User Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#software)
-- [Software Status](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Software-Status.md)
+For more information, please refer to this document
+- [Bunya User Guide](../softwaremodules)
 
 
 Most of the software listed here is freely available to use. 
 Some software requires agreement to license conditions and/or authorised membership of a special access group.
 
->[!NOTE]
->
->These lists have been created on login nodes.
->
->Software built under /sw/auto will have an architecture specific installation location (login nodes are "epyc3").<br>
->Software built under /sw/local will only be available on the architectures where they have been installed (e.g. "epyc3" but not "epyc4").<br>
->Software built under /sw/local/.../noarch can be used on any architecture that makes sense to use. <br>
-The noarch software is either provided by software containers, or, is a commercial software product (e.g. MATLAB).<br>
->GPU nodes will have additional software for utilising (e.g. CUDA for NVidia GPU nodes) and GPU specific software.
+:::note[NOTE]
+
+These lists have been created on login nodes.
+
+Software built under /sw/auto will have an architecture specific installation location (login nodes are "epyc3").<br>
+Software built under /sw/local will only be available on the architectures where they have been installed (e.g. "epyc3" but not "epyc4").<br>
+Software built under /sw/local/.../noarch can be used on any architecture that makes sense to use. <br>
+he noarch software is either provided by software containers, or, is a commercial software product (e.g. MATLAB).<br>
+GPU nodes will have additional software for utilising (e.g. CUDA for NVidia GPU nodes) and GPU specific software.
+:::
 
 ## Overview List 
 
@@ -413,14 +412,3 @@ _TO BE COMPLETED_
 
 
 
-
-## HOW TO GENERATE THESE LISTS
-
-```
-#Module Overview List
-module --show-hidden -w 80 -t overview
-
-#onBunya List
-/sw/admin/davidg/bin/createOnBunyaAppsList 
-
-```
