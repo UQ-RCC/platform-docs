@@ -1,8 +1,7 @@
 ---
-title: "Basics Apptainer"
+title: "Apptainer Basics"
 ---
 
-# The Apptainer Basics
 
 **TO BE COMPLETED**
 
