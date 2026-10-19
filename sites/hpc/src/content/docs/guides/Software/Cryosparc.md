@@ -1,8 +1,7 @@
 ---
-title: "CryoSPARC"
+title: "CryoSPARC User Guide"
 ---
 
-# CryoSPARC User Guide
 
 ## Introduction
 [CryoSPARC](https://cryosparc.com) is a suite of tools for cryo-EM research workflows. It is available on Bunya, though due to its design there are certain considerations to make when using it and some features involving multi-user collaboration are unusable.
