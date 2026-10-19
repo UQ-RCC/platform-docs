@@ -23,11 +23,11 @@ Instructions how to administer accounting groups and accounting strings can be f
 
 ## Bunya User Account Operational Procedure
 
-User access to Bunya is outlined [here](../local-standard-operating-procesdure/bunya-user-operational-procedure).
+User access to Bunya is outlined [here](../local-standard-operating-procesdures/bunya-user-operational-procedure).
 
 ## Bunya User Data Spaces Operational Procedure
 
-Spaces for user data on Bunya, such as `/home` and `/scratch` governed by the [Bunya User Data Spaces Operational Procedure](../local-standard-operating-procedure/bunya-user-data-spaces-operational-procedure) and the [UQ Research Data Management Policy](https://policies.uq.edu.au/document/view-current.php?id=120) and [UQ Research Data Management Procedure](https://policies.uq.edu.au/document/view-current.php?id=476&version=1).
+Spaces for user data on Bunya, such as `/home` and `/scratch` governed by the [Bunya User Data Spaces Operational Procedure](../local-standard-operating-procedures/bunya-user-data-spaces-operational-procedure) and the [UQ Research Data Management Policy](https://policies.uq.edu.au/document/view-current.php?id=120) and [UQ Research Data Management Procedure](https://policies.uq.edu.au/document/view-current.php?id=476&version=1).
 
 ## Violation of above operational procedures
 
