@@ -7,8 +7,6 @@ Users should keep in mind that the majority of CPU nodes on Bunya have 96 cores 
 
 The GPU nodes can have different numbers of CPUs available. Users are reminded to check and request sensible CPU numbers with their GPU requests.
 
-The Pawsey Centre has an excellent guide on how to [migrate from PBS to SLURM](https://pawsey.atlassian.net/wiki/spaces/US/pages/51925978/How+to+Migrate+from+PBS+Pro+to+Slurm). The Pawsey Centre also provides a good general overview of [job scheduling with Slurm](https://support.pawsey.org.au/documentation/display/US/Job+Scheduling) and [examples workflows](https://support.pawsey.org.au/documentation/display/US/Example+Workflows) like array jobs.
-
 ### How to submit a job
 
 You would usually write a slurm script to submit your jobs. Once you have a script you use `sbatch` to submit this script. For example if you have a script called `first-job-script` then you use<br>
