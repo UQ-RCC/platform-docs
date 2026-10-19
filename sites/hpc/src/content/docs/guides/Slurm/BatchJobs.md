@@ -2,7 +2,6 @@
 title: 'Submitting batch jobs'
 ---
 
-# Submitting batch jobs
 
 Users should keep in mind that the majority of CPU nodes on Bunya have 96 cores (192 threads) per node. Only 12 nodes have 256 cores (512 threads). 256 cores (`--ntask-per-node=256`) 512 threads (`--cpu-per-task=512`) is therefore the maximum a multi thread job can request. Please note not all calculations scale well with cores, so before requesting all 256/512 cores/threads **do some testing first**. 
 
@@ -66,7 +65,7 @@ See `man sbatch` and `man srun` for more options (use arrow keys to scroll up an
 
 So why is 2000000MB not the same as 2TB? 1024 MB = 1 GB and 1024 GB = 1 TB. This means 2000 GB = 2048000 MB which is larger than 2000000M which is set as the maximum available memory on a standard compute node.
 
-***See [Slurm tips](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Slurm-Tips.md) on how to target a rage of GPUs, multiple partitions, and short jobs.***
+***See [Slurm tips](../slurm-tips) on how to target a rage of GPUs, multiple partitions, and short jobs.***
 
 
 
