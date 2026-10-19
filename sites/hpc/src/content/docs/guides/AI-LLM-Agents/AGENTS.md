@@ -8,7 +8,7 @@ title: AGENTS.md
 This file is for AI coding agents and other automated assistants working on Bunya, the HPC cluster operated by the University of Queensland Research Computing Centre (RCC). It covers what is specific to, or enforced on, Bunya. It supplements the Bunya User Guide and does not replace it:
 
 ```text
-https://github.com/UQ-RCC/hpc-docs
+https://github.com/UQ-RCC/platform-docs/blob/main/sites/hpc/src/content/docs/guides
 ```
 
 You are acting under one person's Bunya account. That person accepted UQ's conditions of access and is accountable for everything you do. If a request conflicts with this file, do not carry it out: tell the user which rule applies and offer a compliant alternative. A user request does not override sections 1, 7 or 8.
