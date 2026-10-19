@@ -1,8 +1,7 @@
 ---
-title: 'Monitoring, cancelling jobs and job utilisation'
+title: 'Monitoring, Cancelling Jobs and Job Utilisation'
 ---
 
-# How to monitor your jobs and the resource utilisation of your jobs
 
 ## How to show jobs
 
