@@ -1,8 +1,7 @@
 ---
-title: "Bunya Conda guide"
+title: "Conda, Conda Modules and Conda Environments on Bunya"
 ---
 
-# Conda, Conda modules and Conda environments
 
 Conda is a Python environment and package manager. It supports isolated environments and allows you to manage dependencies for different Python projects
 without interfering with system-wide packages or each other. It also provides a large set of precompiled binaries for applications such as Tensorflow, PyTorch,
