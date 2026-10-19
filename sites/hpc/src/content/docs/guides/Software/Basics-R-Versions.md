@@ -1,8 +1,7 @@
 ---
-title: "Basics R versions"
+title: "R Versions on Bunya"
 ---
 
-# R Versions on Bunya
 
 **TO BE COMPLETED**
 
@@ -42,7 +41,7 @@ If you target the older EPYC3 CPU nodes, you can use the purpose built `r/4.4.0-
 
 ### Software container versions
 
-Please refer to the [*Basics.apptainer*](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Basics-apptainer.md) for information about software containers. *Software containers do not run on login nodes.*
+Please refer to the [*Basics.apptainer*](../basics-apptainer) for information about software containers. *Software containers do not run on login nodes.*
 
 The R programming language underpins the integrated development environment (IDE) called RStudio.<br>
 Since the launch of onBunya, the RStudio software (and R within) are provided on Bunya as software containers. There are several versions available.
@@ -57,9 +56,9 @@ If you need to use a software container version of R without RStudio that is OK.
 |`r/4.5.1`|Software container with approximately 1,200 popular R packages from CRAN.|
 
 
->[!CAUTION]
+:::caution[CAUTION]
 If you use a bare metal R 4.4.x version and switch to a software container 4.4.x version, then you should delete your personal library space for that version e.g. `$HOME/R/x86_64-pc-linux-gnu-library/4.4/` and rebuild all your personal modules.
-
+:::
 
 
 
