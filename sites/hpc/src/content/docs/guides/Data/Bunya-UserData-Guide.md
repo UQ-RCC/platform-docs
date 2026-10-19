@@ -1,30 +1,12 @@
 ---
-title: "Bunya user data guide"
+title: "Bunya User Data Guide"
 ---
 
-# Where should my data and software go on Bunya
 
-Bunya has several spaces users have access to to keep their data and software.
->[!IMPORTANT]
->These spaces are subject to the [Bunya User Data Spaces Operational Procedure](../policy/Bunya-User-Data-Spaces-Operational-Procedure.md) and the [UQ Research Data Management Policy](https://policies.uq.edu.au/document/view-current.php?id=120) and [UQ Research Data Management Procedure](https://policies.uq.edu.au/document/view-current.php?id=476&version=1).
-
-**Individual, not sharable, spaces**<br>
-- [home directory](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-UserData-Guide.md#homeusername)<br>
-- [scratch user directory](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-UserData-Guide.md#scratchuserusername)<br>
-
-**Space during jobs**<br>
-- [TMPDIR](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-UserData-Guide.md#tmpdir)<br>
-
-**Spaces to host data and software**<br>
-- [opendata](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-UserData-Guide.md#scratchopendata)<br>
-- [licenseddata](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-UserData-Guide.md#scratchlicenseddata)<br>
-- [sw](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-UserData-Guide.md#sw)<br>
-
-**Group spaces**<br>
-- [Group projects](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-UserData-Guide.md#scratchproject)<br>
-
-**Archival Storage**<br>
-- [UQRDM Q storage records](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-UserData-Guide.md#qrisdata)<br>
+Bunya has several spaces users have access to to keep their data and software.<br>
+:::caution[IMPORTANT]
+These spaces are subject to the [Bunya User Data Spaces Operational Procedure](../../policy/bunya-user-data-spaces-operational-procedure) and the [UQ Research Data Management Policy](https://policies.uq.edu.au/document/view-current.php?id=120) and [UQ Research Data Management Procedure](https://policies.uq.edu.au/document/view-current.php?id=476&version=1).
+:::
 
 
 ## Spaces available by default for every user
@@ -94,7 +76,7 @@ to check on their quotas and grace period in `/scratch/user`.
 
 ### `/scratch/opendata`
 
-The [opendata](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/List-of-Datasets.md#open-data-sets) space is a read-only space to house data sets and models. Current data includes, GTDB, BLAST, Kraken, CheckM2, SingleM, nuScens, nuScenes-C, huggingface, ollama, gguf, and many more.
+The [opendata](../list-of-datasets/#open-data-sets) space is a read-only space to house data sets and models. Current data includes, GTDB, BLAST, Kraken, CheckM2, SingleM, nuScens, nuScenes-C, huggingface, ollama, gguf, and many more.
 
 Users are required to check if the data they need is already housed in `/scratch/opendata` or could be housed there before requesting an increase to their `/scratch/user` space or scratch project group space. 
 
@@ -108,7 +90,7 @@ Information needed to consider an instal request:
 
 ### `/scratch/licenseddata`
 
-The [licenseddata](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/List-of-Datasets.md#licensed-data-sets) space is a read-only space to house licensed data sets and models. 
+The [licenseddata](../list-of-datasets/#licensed-data-sets) space is a read-only space to house licensed data sets and models. 
 
 Users are required to check if the data they need is already housed in `/scratch/licenseddata` or could be housed there before requesting an increase to their `/scratch/user` space or scratch project group space. 
 
@@ -173,7 +155,7 @@ drwxrwsr-x.  2 user-2 Project_Access_Group        4K Oct  9 2023  directory-2
 
 ### `/sw`
 
-Users or groups who want to share software should check if it is already installed as a software module on Bunya and if not contact rcc-support@uq.edu.au to see if it could be installed. See [software modules on Bunya](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#software) and the [Conda on Bunya Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/conda-environment.md). 
+Users or groups who want to share software should check if it is already installed as a software module on Bunya and if not contact rcc-support@uq.edu.au to see if it could be installed. See [software modules on Bunya](../../software/softwaremodules) and the [Conda on Bunya Guide](../../software/conda-environment). 
 
 Groups that need to share a range of software and/or share custom build software can apply for space in `/sw`. Usually only one custodion with install (write) access will be permitted with the rest of the group accessing the software read-only similar to all Bunya software. 
 
@@ -329,4 +311,4 @@ The command `df -i /QRISdata/QNNNN` will also force the mounting of your RDM Q s
 
 #### How can I access my /QRISdata collection in other ways?
 
-Please refer to our [UQRDM Overview Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/RDM-guide.md) and links therein to UQRDM portal user information.
+Please refer to our [UQRDM Overview Guide](../rdm-guide) and links therein to UQRDM portal user information.
