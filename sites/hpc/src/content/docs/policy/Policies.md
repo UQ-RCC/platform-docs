@@ -8,26 +8,26 @@ Access and usage of RCC infrastructure is governed by the following operational 
 
 ## Bunya Conditions of Access
 
-All users agree to the [Bunya Conditions of Access](https://github.com/UQ-RCC/hpc-docs/blob/main/policy/Bunya-Conditions-of-Access.md) when they apply for access to Bunya.
+All users agree to the [Bunya Conditions of Access](../conditions-of-access/bunya-conditions-of-access) when they apply for access to Bunya.
 
 ## UQ Conditions of Access to RCC Infrastructure
 
-All users agree to the [UQ Conditions of Access to RCC Infrastructure](UQ-Conditions-of-Access-to-RCC-Infrastructure.pdf) when they apply for access to Bunya. This includes the [UQ ICT Policy](https://policies.uq.edu.au/document/view-current.php?id=60).
+All users agree to the [UQ Conditions of Access to RCC Infrastructure](../conditions-of-access/uq-conditions-of-access-to-rcc-infrastructure) when they apply for access to Bunya. This includes the [UQ ICT Policy](https://policies.uq.edu.au/document/view-current.php?id=60).
 
 ## Bunya Accounting Group Operational Procedure
 
-Accounting groups, ownership, responsibilities and administration are outlined in the [Bunya Accounting Group Operational Procedure](https://github.com/UQ-RCC/hpc-docs/blob/main/policy/Bunya-Accounting-Group-Operational-Procedure.md).
+Accounting groups, ownership, responsibilities and administration are outlined in the [Bunya Accounting Group Operational Procedure](../local-stnadard-operating-procedures/bunya-accounting-group-operational-procedure).
 
-Instructions how to administer accounting groups and accounting strings can be found [here](../guides/Accounting-group-admin.md).
+Instructions how to administer accounting groups and accounting strings can be found [here](../../guides/slurm/accounting-group-admin).
 
 
 ## Bunya User Account Operational Procedure
 
-User access to Bunya is outlined [here](https://github.com/UQ-RCC/hpc-docs/blob/main/policy/Bunya-User-Operational-Procedure.md).
+User access to Bunya is outlined [here](../local-standard-operating-procesdure/bunya-user-operational-procedure).
 
 ## Bunya User Data Spaces Operational Procedure
 
-Spaces for user data on Bunya, such as `/home` and `/scratch` governed by the [Bunya User Data Spaces Operational Procedure](https://github.com/UQ-RCC/hpc-docs/blob/main/policy/Bunya-User-Data-Spaces-Operational-Procedure.md) and the [UQ Research Data Management Policy](https://policies.uq.edu.au/document/view-current.php?id=120) and [UQ Research Data Management Procedure](https://policies.uq.edu.au/document/view-current.php?id=476&version=1).
+Spaces for user data on Bunya, such as `/home` and `/scratch` governed by the [Bunya User Data Spaces Operational Procedure](../local-standard-operating-procedure/bunya-user-data-spaces-operational-procedure) and the [UQ Research Data Management Policy](https://policies.uq.edu.au/document/view-current.php?id=120) and [UQ Research Data Management Procedure](https://policies.uq.edu.au/document/view-current.php?id=476&version=1).
 
 ## Violation of above operational procedures
 
