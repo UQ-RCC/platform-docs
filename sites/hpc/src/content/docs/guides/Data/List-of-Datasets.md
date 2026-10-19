@@ -10,7 +10,7 @@ To save on disk space, and reduce duplication of effort, a growing number of dat
 They are being provided centrally in the Bunya scratch filesystem.
 
 For more information, please refer to these documents
-- [Operational Procedures](../../policy/bunya-user-data-spaces-operational-procedure/#scratchopendata)
+- [Operational Procedures](../../policy/local-standard-operating-procedures/bunya-user-data-spaces-operational-procedure/#scratchopendata)
 - [User Data Guide](../bunya-userdata-guide/#scratchopendata)
 
 Most are freely available to use. Some require agreement to license conditions.
