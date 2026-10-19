@@ -1,8 +1,7 @@
 ---
-title: "Bunya accounting group operational procedure"
+title: "Bunya Accounting Group Operational Procedure"
 ---
-
-## Bunya Accounting Group Operational Procedure 
+ 
 
 Dated March 2024 
 
