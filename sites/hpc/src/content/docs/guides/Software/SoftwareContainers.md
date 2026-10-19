@@ -1,8 +1,7 @@
 ---
-title: 'Software Containers'
+title: 'Using Software Containers on Bunya'
 ---
 
-# Using software containers on Bunya
 
 The software build management system on Bunya is better equipped to support a range of software on the "bare-metal". There is, still, support on Bunya for software container technology to provide greater flexibility for Bunya users.
 
@@ -44,5 +43,5 @@ You cannot build a container on Bunya directly from a Dockerfile prescription. I
 
 ## For more information about software containers
 
-Refer to this more [detailed guide about using apptainer](Basics-apptainer.md).
+Refer to this more [detailed guide about using apptainer](../basics-apptainer).
 
