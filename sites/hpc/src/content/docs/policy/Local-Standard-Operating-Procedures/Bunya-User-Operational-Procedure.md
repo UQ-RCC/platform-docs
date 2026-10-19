@@ -1,8 +1,7 @@
 ---
-title: "Bunya user operational procedure"
+title: "Bunya User Operational Procedure"
 ---
-
-## Bunya User Operational Procedure 
+ 
 
 Dated March 2024 
 
