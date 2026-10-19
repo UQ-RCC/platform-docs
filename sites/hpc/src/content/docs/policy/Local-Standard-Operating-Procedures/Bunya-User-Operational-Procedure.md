@@ -31,7 +31,7 @@ In below clauses:
 
 4) A user must only have one single user account on Bunya. A user with more than one institutional credential, for example a user with student and staff credentials, may only use one of these credentials to gain access to Bunya. In the case where a user is found to have more than one single Bunya user account all Bunya user accounts but one will be disabled in consultation with the user. If a user does not choose within a reasonable time frame, RCC will choose the accounts to disable.  
 
-5) Users must agree to the Bunya Access Conditions (https://github.com/UQ-RCC/hpc-docs/blob/main/policy/Bunya-Conditions-of-Access.md) and the UQ Conditions of Access to RCC Infrastructure (https://github.com/UQ-RCC/hpc-docs/blob/main/policy/UQ-Conditions-of-Access-to-RCC-Infrastructure.pdf) when applying for access to Bunya through the Bunya application process. 
+5) Users must agree to the [Bunya Access Conditions](../../conditions-of-access//bunya-conditions-of-access) and the [UQ Conditions of Access to RCC Infrastructure](../../conditions-of-access/uq-conditions-of-access-to-rcc-infrastructure) when applying for access to Bunya through the Bunya application process. 
 
 6) Bunya users must comply with the Bunya Access Conditions (https://github.com/UQ-RCC/hpc-docs/blob/main/policy/Bunya-Conditions-of-Access.md) and the UQ Conditions of Access to RCC Infrastructure (https://github.com/UQ-RCC/hpc-docs/blob/main/policy/UQ-Conditions-of-Access-to-RCC-Infrastructure.pdf).  
 
