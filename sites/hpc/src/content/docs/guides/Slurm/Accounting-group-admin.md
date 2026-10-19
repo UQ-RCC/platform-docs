@@ -1,12 +1,11 @@
 ---
-title: "Administration of accounting groups"
+title: Administration of Accounting Groups
 ---
 
-# Accounting Group and Administration
 
 ## Accounting group operational procedure
 
-Accounting group owners and administrators should read and consult the [Accounting Group Operational Procedure](../policy/Bunya-Accounting-Group-Operational-Procedure.md).
+Accounting group owners and administrators should read and consult the [Accounting Group Operational Procedure](../../policy/local-standard-operating-proceduresbunya-accounting-group-operational-procedure).
 
 ## Accounting groups
 
