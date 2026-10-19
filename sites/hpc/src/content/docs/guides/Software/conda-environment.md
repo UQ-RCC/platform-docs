@@ -10,34 +10,37 @@ NumPy, Pandas, bioinformatics and genomics software, and many more.
 
 ## Important warning on user installed Conda
 
->[!IMPORTANT]
->The advice to users is to avoid running the Conda initialisation which writes to the user's `.bashrc` file. This changes the user's shell permanently and can cause problems. If your prompt has a `(base)` attached to it when you log in then your `.bashrc` file has already been changed. You can reverse this by cleaning up your `.bashrc` file and sourcing the `conda.sh` file from your installation. Users can then use<br>
->`conda activate`<br> 
->to switch on the Conda base environment and<br>
->`conda deactivate` <br>
->to switch it off again.
->This is keeping the shell clean and Conda base and other Conda environments can so be loaded for jobs only.
->
->Users can clean their `.bashrc` file by opening it and removing everything between and including these two lines<br>
->`# >>> conda initialize >>>`<br>
->`# <<< conda initialize <<<`<br>
->
->Users can also clean their `.bashrc` file by using `conda init` again with <br>
->`conda init --reverse`<br>
+:::caution[IMPORTANT]
+The advice to users is to avoid running the Conda initialisation which writes to the user's `.bashrc` file. This changes the user's shell permanently and can cause problems. If your prompt has a `(base)` attached to it when you log in then your `.bashrc` file has already been changed. You can reverse this by cleaning up your `.bashrc` file and sourcing the `conda.sh` file from your installation. Users can then use<br>
+`conda activate`<br> 
+to switch on the Conda base environment and<br>
+`conda deactivate` <br>
+to switch it off again.
+This is keeping the shell clean and Conda base and other Conda environments can so be loaded for jobs only.
+
+Users can clean their `.bashrc` file by opening it and removing everything between and including these two lines<br>
+`# >>> conda initialize >>>`<br>
+`# <<< conda initialize <<<`<br>
+
+Users can also clean their `.bashrc` file by using `conda init` again with <br>
+`conda init --reverse`<br>
+:::
 
 
 ## Important warning on user installed Conda and onBunya usage
 
->[!IMPORTANT]
->If you have the conda initialisation in your `.bashrc` file then you cannot use onBunya. To use the virutal desktop in onBunya you need to have clean `.bashrc` file. The easiest was to clean it is to run <br>
->`conda init --reverse`<br>
+:::caution[IMPORTANT]
+If you have the conda initialisation in your `.bashrc` file then you cannot use onBunya. To use the virutal desktop in onBunya you need to have clean `.bashrc` file. The easiest was to clean it is to run <br>
+`conda init --reverse`<br>
+:::
 
 ## Important warning to not run installs on login nodes
->[!IMPORTANT]
->**ALL** software builds should be done on a compute node. Processes running on the login nodes, including software builds (conda environments, make-make install, EasyBuild) will most likley be killed if found on the login nodes.
->
->If you are building your own software, especially if you are compiling your own software, you need to be aware of the different architectures, `epyc3` and `epyc4`. Software built on an `epyc3` compute node will run on a `epyc4` compute node **BUT** software built on a `epyc4` compute node will not run on a `epyc3` compute node. If you want ease of use you need to make sure to compile on a `epyc3` compute node. If you want best performance you should compile for a specific architecture but then need to request that architecture for your jobs.
->See here (https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#interactive-jobs) for how to submit an interactive job.
+:::caution[IMPORTANT]
+**ALL** software builds should be done on a compute node. Processes running on the login nodes, including software builds (conda environments, make-make install, EasyBuild) will most likley be killed if found on the login nodes.
+
+If you are building your own software, especially if you are compiling your own software, you need to be aware of the different architectures, `epyc3` and `epyc4`. Software built on an `epyc3` compute node will run on a `epyc4` compute node **BUT** software built on a `epyc4` compute node will not run on a `epyc3` compute node. If you want ease of use you need to make sure to compile on a `epyc3` compute node. If you want best performance you should compile for a specific architecture but then need to request that architecture for your jobs.
+See [here](../../slurm/interactivejobs) for how to submit an interactive job.
+:::
 
 ## Using existing Conda modules
 
@@ -143,13 +146,15 @@ After making these changes:
 - New environments will be created in `/scratch/user/username/conda/envs` or `/scratch/project/projectname/conda/envs`.
 - Downloaded package files will be stored in `/scratch/user/username/conda/pkgs` or `/scratch/project/projectname/conda/pkgs`.
 
-> [!Note]
-> Any existing environments and cached packages in `/home/username/.conda/` will remain there unless they are moved manually or recreated in the new location.
+:::note[Note]
+ Any existing environments and cached packages in `/home/username/.conda/` will remain there unless they are moved manually or recreated in the new location.
+:::
 
-> [!Caution]
-> The automatic purging of unused files in /scratch after 90 days commenced in November 2025.
-> If you relocate your envs directory to /scratch it will be subject to automatic deletion. Files within an otherwise active conda environment may be silently deleted.
-> See the [section below](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/conda-environment.md#future-proofing-your-envs) about some options about what to do.
+:::caution[Caution]
+The automatic purging of unused files in /scratch after 90 days commenced in November 2025.
+If you relocate your envs directory to /scratch it will be subject to automatic deletion. Files within an otherwise active conda environment may be silently deleted.
+See the [section below](#future-proofing-your-envs) about some options about what to do.
+:::
 
 ## Conda channels
 
@@ -174,9 +179,10 @@ Other channels are available such as:
 These channels should be used as needed on a case-by-case basis. In most cases, the required packages can be found on `conda-forge`, but certain specialized
 packages may only be available in specific channels.
 
-> [!NOTE]
-> Installing packages, such as GPU-accelerated libraries, can usually be done using the `conda-forge` channel. A specialised channel such as `nvidia`, should be used when there is a special need to do so.
-> Most bioinformatics packages can usually be done using the `conda-forge` and `bioconda` channels.
+:::note[NOTE]
+Installing packages, such as GPU-accelerated libraries, can usually be done using the `conda-forge` channel. A specialised channel such as `nvidia`, should be used when there is a special need to do so.
+Most bioinformatics packages can usually be done using the `conda-forge` and `bioconda` channels.
+:::
 
 ## Creating a new Conda environment
 
@@ -273,8 +279,9 @@ Although it is not recommended to mix Pip and Conda packages, it is possible to 
 - Avoid modifying the environment with Conda commands after installing packages with Pip as it may cause issues. Removing and re-creating the environment is generally the best way to fix any problems created.
 
 ### Using Pip packages exclusively
-> [!CAUTION]
-> It is important **not** to install pip packages in 'bare' or 'empty' Conda environments. Doing so can lead to problems with package paths.
+:::caution[CAUTION]
+It is important **not** to install pip packages in 'bare' or 'empty' Conda environments. Doing so can lead to problems with package paths.
+:::
 
 A Conda environment with no Conda packages installed is known as a 'bare' or 'empty' environment. Creating an environment using the following command will result in a bare environment.
 
