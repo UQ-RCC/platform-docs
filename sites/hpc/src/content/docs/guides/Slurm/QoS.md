@@ -23,9 +23,9 @@ QoS are used to control access to resources and apply sustainable limits.<br>
 * onBunya Accelerated Desktops with 2 or 3 GPUs will be submitted with the gpu QoS.
 * gpu still requires that at least one GPU is requested for the job as the default for number of GPUs is zero.
 * The max of H100 GPUs is 4 across all QoS and paritions.
-* FairShare usage limit is 15 million BillingMinutes per user, see [here](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/FairShare.md#assocgrpbillingminutes)
+* FairShare usage limit is 15 million BillingMinutes per user, see [here](../fairshare/#assocgrpbillingminutes)
 * The task limit on array jobs is 1000.
-* See [Slurm Tips](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Slurm-Tips.md) on using different QoS for short jobs.
+* See [Slurm Tips](../slurm-tips) on using different QoS for short jobs.
 
 
 | QOS |  Partitions |  Access| Priority | All User Group limit | User limits |
