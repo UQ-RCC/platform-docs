@@ -48,7 +48,7 @@ Account                    User  RawShares  NormShares    RawUsage  EffectvUsage
 
 ### User Limits
 
-Bunya employs [per user limits](../qos) on total amount of resources that can be in use at any one time. When these limits are reached they will show a reason that is a `QOSMax*PerUserLimit`, or `JobArrayTaskLimit`, or `AssocGrpBillingMinutes` depending on the limit that has been reached.
+Bunya employs [per user limits](./qos) on total amount of resources that can be in use at any one time. When these limits are reached they will show a reason that is a `QOSMax*PerUserLimit`, or `JobArrayTaskLimit`, or `AssocGrpBillingMinutes` depending on the limit that has been reached.
 
 For example, if a user has 4 GPUs in use, any further job will queue until the usage of the user drops below the limit of 4 GPUs. If the usage drops to 3 GPUs and the queued job needs 2 GPUs then this job will still stay queued as the usage needs to drop below of what the queued job requires to run. Once the usage is 2 GPUs the queued job can start as the current usage and new job now fit into the limit of 4 GPUs.
 
