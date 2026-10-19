@@ -1,8 +1,7 @@
 ---
-title: 'Transferring data'
+title: 'Transferring Data'
 ---
 
-# Transferring data
 
 We recommend to use command line `scp` and `sftp`. These are accessible to all users, via a shell for Linux and Mac users and via WSL and `cmd` for Windows users.
 
