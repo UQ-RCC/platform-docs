@@ -2,7 +2,6 @@
 title: ' Software Modules'
 ---
 
-# Software Modules
 
 The [training resources](https://rcc.uq.edu.au/training-support/training-videos/hpc-training-videos) have a short video on how to use [software modules](https://youtu.be/qdSRpcEnrHE?si=60b5jif3ku-tf2z3) to load installed software on HPC.
 
