@@ -25,7 +25,7 @@ These lists have been created on login nodes.
 Software built under /sw/auto will have an architecture specific installation location (login nodes are "epyc3").<br>
 Software built under /sw/local will only be available on the architectures where they have been installed (e.g. "epyc3" but not "epyc4").<br>
 Software built under /sw/local/.../noarch can be used on any architecture that makes sense to use. <br>
-he noarch software is either provided by software containers, or, is a commercial software product (e.g. MATLAB).<br>
+The noarch software is either provided by software containers, or, is a commercial software product (e.g. MATLAB).<br>
 GPU nodes will have additional software for utilising (e.g. CUDA for NVidia GPU nodes) and GPU specific software.
 :::
 
