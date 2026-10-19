@@ -20,7 +20,7 @@ The terms in this form determine the basic understanding of a user (new or exper
 
 * I understand that the space provided to me in /home is not backed up. 
 
-* I understand that the space provided to me in /QRISdata via the RDM is hierarchical storage including fast disk, slow disk and tape. I understand the implications this will have on access to data in /QRISdata. An overview of RDM usage via HPC is provided [here](../../guides/data/bunya-userdata-guide/#qrisdata). 
+* I understand that the space provided to me in /QRISdata via the RDM is hierarchical storage including fast disk, slow disk and tape. I understand the implications this will have on access to data in /QRISdata. An overview of RDM usage via HPC is provided [here](../../../guides/data/bunya-userdata-guide/#qrisdata). 
 
 * I understand that I should not be running/submitting calculations directly from a directory/folder in /QRISdata. 
 
