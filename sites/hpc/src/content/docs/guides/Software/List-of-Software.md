@@ -12,8 +12,7 @@ Most software, even some things that would normally be considered part of the st
 Access to this software is facilitated by the *modules* mechanism.
 Some software is made available through GUI menus in [onBunya](https://onbunya.rcc.uq.edu.au)
 
-For more information, please refer to this document
-- [Bunya User Guide](../softwaremodules)
+For more information, please refer to the [guide on software modules](../softwaremodules)
 
 
 Most of the software listed here is freely available to use. 
