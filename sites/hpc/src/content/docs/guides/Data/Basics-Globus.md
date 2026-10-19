@@ -1,14 +1,12 @@
 ---
-title: "Basics Globus"
+title: "The Globus Basics"
 ---
 
-Globus Markdown
 
-# The Globus Basics
+:::[Note]
 
->[!Note]
->
->This page is still under construction. Last updated 20260331
+This page is still under construction. Last updated 20260331
+:::
 
 ## What is Globus ?
 
