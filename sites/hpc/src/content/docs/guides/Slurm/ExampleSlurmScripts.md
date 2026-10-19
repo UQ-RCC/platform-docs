@@ -1,5 +1,5 @@
 ---
-title: 'Example Slurm scripts'
+title: 'Example Slurm Scripts'
 ---
 
 ## Simple script for CUDA GPUs.
