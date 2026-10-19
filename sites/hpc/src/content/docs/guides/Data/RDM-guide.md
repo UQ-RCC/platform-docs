@@ -1,8 +1,7 @@
 ---
-title: "RDM guide"
+title: "UQRDM Access from Bunya Guide"
 ---
 
-# UQRDM overview
 
 ## Document Purpose
 This document's focus is the key concepts for using RDM Q as they relate to integrating RDM within your computational workflows.
@@ -29,10 +28,11 @@ There are 3 different types of *Storage Record*: general data (A storage record)
 
 A UQRDM Q storage record is safe, backed up, and recoverable storage for research data. Q storage records are automaticaly available on Bunya and onBunya.
 
->[!IMPORTANT]
->**UQRDM Q storage records should not be used as storage for active computations.** UQRDM Q storage records should not be used for rapidly changing data or simultaneous modification of the same file by multiple users (e.g. one person changing one field in a spreadsheet whilst somebody else has it open and is editing a different one) or in multiple locations (i.e. you should not edit a file on cloud.rdm.uq.edu.au or via HPC Bunya and on your desktop at the same time).  The total number of files available per Q storage record is limited (the default is one million) and lots of small files is slower to transfer than a few large files. UQRDM works best when files that are not being frequently used are stored in archive files (e.g. tar, zip, 7zip, rar) before being backed up to RDM.
+:::caution[IMPORTANT]
+**UQRDM Q storage records should not be used as storage for active computations.** UQRDM Q storage records should not be used for rapidly changing data or simultaneous modification of the same file by multiple users (e.g. one person changing one field in a spreadsheet whilst somebody else has it open and is editing a different one) or in multiple locations (i.e. you should not edit a file on cloud.rdm.uq.edu.au or via HPC Bunya and on your desktop at the same time).  The total number of files available per Q storage record is limited (the default is one million) and lots of small files is slower to transfer than a few large files. UQRDM works best when files that are not being frequently used are stored in archive files (e.g. tar, zip, 7zip, rar) before being backed up to RDM.
+:::
 
-Please also refer to the [Bunya Storage User Guide section](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-UserData-Guide.md#qrisdata) 
+Please also refer to the [Bunya Storage User Guide section](../bunya-userdata-guide/#qrisdata) 
 
 ## Accessing RDM from PC
 
@@ -64,11 +64,11 @@ It is *not* possible to mount A or I type RDM collection storage allocations ont
 
 Users of onBunya service are provided with convenient short cuts on the desktop to access the RDM Q storage allocations that they are the owner of, or collaborator with.
 
-Please refer to the [Bunya Storage User Guide section](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-UserData-Guide.md#qrisdata) on using RDM Q collections on Bunya for more details.
+Please refer to the [Bunya Storage User Guide section](../bunya-userdata-guide/#qrisdata) on using RDM Q collections on Bunya for more details.
 
 ---
 
-![](../media/RDM-graph-Git.bmp)
+![](../../media/RDM-graph-Git.bmp)
 
 The diagram above shows a simplified view of the different ways (paths) a Q storage record can be accessed. 
 * *"Q" collections* represent the tape part of the RDM. Data here is backed up and can be recovered if it has been deleted or corrupted recently.
