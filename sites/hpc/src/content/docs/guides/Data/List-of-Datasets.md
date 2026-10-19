@@ -10,8 +10,8 @@ To save on disk space, and reduce duplication of effort, a growing number of dat
 They are being provided centrally in the Bunya scratch filesystem.
 
 For more information, please refer to these documents
-- [Operational Procedures](https://github.com/UQ-RCC/hpc-docs/blob/main/policy/Bunya-User-Data-Spaces-Operational-Procedure.md#scratchopendata)
-- [User Data Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-UserData-Guide.md#scratchopendata)
+- [Operational Procedures](../../policy/bunya-user-data-spaces-operational-procedure/#scratchopendata)
+- [User Data Guide](../bunya-userdata-guide/#scratchopendata)
 
 Most are freely available to use. Some require agreement to license conditions.
 
@@ -412,7 +412,7 @@ To gain access to these licensed data sets, please submit an email to rcc-suppor
 ## HOW TO UPDATE THIS INFORMATION
 
 Information on this web page will be updated sporadically. 
-If you need to know the latest, here is how you can look it up for your self.
+If you need to know the latest, here is how you can look it up for yourself.
 
 ```
 tree -d -I Downloads -L 2 /scratch/licenseddata/
