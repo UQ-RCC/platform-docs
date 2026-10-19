@@ -16,7 +16,7 @@ All users agree to the [UQ Conditions of Access to RCC Infrastructure](../condit
 
 ## Bunya Accounting Group Operational Procedure
 
-Accounting groups, ownership, responsibilities and administration are outlined in the [Bunya Accounting Group Operational Procedure](../local-stnadard-operating-procedures/bunya-accounting-group-operational-procedure).
+Accounting groups, ownership, responsibilities and administration are outlined in the [Bunya Accounting Group Operational Procedure](../local-standard-operating-procedures/bunya-accounting-group-operational-procedure).
 
 Instructions how to administer accounting groups and accounting strings can be found [here](../../guides/slurm/accounting-group-admin).
 
