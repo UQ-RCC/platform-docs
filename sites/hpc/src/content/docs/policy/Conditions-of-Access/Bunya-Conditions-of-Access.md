@@ -1,8 +1,7 @@
 ---
-title: "Bunya conditions of access"
+title: "Bunya Conditions of Access"
 ---
 
-## Bunya Conditions of Access
 dated 2025-11-10 
 
 **By accessing Bunya a user agrees to the below terms of conditions of access.**
@@ -11,7 +10,7 @@ The terms in this form determine the basic understanding of a user (new or exper
 
 * I understand that a basic knowledge of Unix is required to use HPC efficiently. 
 
-* I understand that I should make reasonable effort to learn about Bunya and its efficient and appropriate usage before running calculations on Bunya. The Bunya User Guide can be found here https://github.com/UQ-RCC/hpc-docs 
+* I understand that I should make reasonable effort to learn about Bunya and its efficient and appropriate usage before running calculations on Bunya. The Bunya User Guide can be found here https://docs.hpc.rcc.uq.edu.au.
 
 * I understand that calculations and resource intensive processes, no matter how quick or small, should not be run on the login nodes. This includes software environment installations (conda, python and R) and compilation (Easybuild, make, cmake etc). They must be run via the queue submission system as a batch or interactive job. 
 
