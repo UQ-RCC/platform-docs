@@ -1,8 +1,7 @@
 ---
-title: "Fair share"
+title: Bunya Fair Share
 ---
 
-# Bunya Fair Share 
 
 Bunya employs fair share to ensure that every Bunya user can use an equal share of the computational resources.
 
@@ -20,14 +19,16 @@ The fair share amount is constantly slowly refilling over time and the fair shar
 * Once some jobs have finished the user's jobs will start to wait longer. This is normal and expected.
 * This will not stop the user from submitting jobs and jobs will still start running once they have made their way up the queue.
 * Priority of jobs in the queue are recalculated with every job finishing (of any user) and new jobs starting.
->[!IMPORTANT]
->* The fair share amount for each user is based on the total number of users registered in Bunya accounting groups. Bunya accounting group owners and administrators are advised to remove any user who has left their group promptly as this will increase the fair share amount of each user on Bunya.
->* Fair share is calculated per Bunya user. Being a member of more than one Bunya accounting group does not increase a user's fair share. Being in more than one Bunya accounting group is also a violation of RCC policy unless it has been discussed with and approved by RCC.
 
->[!CAUTION]
->* Each job is charged for **requested** resources. This means a job requesting 48 cores but is only using 10 is still charged for all 48 cores. And a job requesting a GPU is charged for the GPU no matter if it was used or not. This is because the requested resources are reserved for the job and cannot be used by other jobs. The only exception is walltime as resources are released when the job finishes.
->* A job leaving resources idle will still be charged.
->* **Inefficient use of resources is unfair to other users waiting in the queue and will impact the wait-time of future jobs.**
+:::note[IMPORTANT]
+The fair share amount for each user is based on the total number of users registered in Bunya accounting groups. Bunya accounting group owners and administrators are advised to remove any user who has left their group promptly as this will increase the fair share amount of each user on Bunya.
+Fair share is calculated per Bunya user. Being a member of more than one Bunya accounting group does not increase a user's fair share. Being in more than one Bunya accounting group is also a violation of RCC policy unless it has been discussed with and approved by RCC.
+
+:::caution[CAUTION]
+- Each job is charged for **requested** resources. This means a job requesting 48 cores but is only using 10 is still charged for all 48 cores. And a job requesting a GPU is charged for the GPU no matter if it was used or not. This is because the requested resources are reserved for the job and cannot be used by other jobs. The only exception is walltime as resources are released when the job finishes.
+- A job leaving resources idle will still be charged.
+- **Inefficient use of resources is unfair to other users waiting in the queue and will impact the wait-time of future jobs.**
+:::
 
 ### Useful commands
 
@@ -47,7 +48,7 @@ Account                    User  RawShares  NormShares    RawUsage  EffectvUsage
 
 ### User Limits
 
-Bunya employs [per user limits](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#qos-use-and-limits) on total amount of resources that can be in use at any one time. When these limits are reached they will show a reason that is a `QOSMax*PerUserLimit`, or `JobArrayTaskLimit`, or `AssocGrpBillingMinutes` depending on the limit that has been reached.
+Bunya employs [per user limits](../../slurm/qos) on total amount of resources that can be in use at any one time. When these limits are reached they will show a reason that is a `QOSMax*PerUserLimit`, or `JobArrayTaskLimit`, or `AssocGrpBillingMinutes` depending on the limit that has been reached.
 
 For example, if a user has 4 GPUs in use, any further job will queue until the usage of the user drops below the limit of 4 GPUs. If the usage drops to 3 GPUs and the queued job needs 2 GPUs then this job will still stay queued as the usage needs to drop below of what the queued job requires to run. Once the usage is 2 GPUs the queued job can start as the current usage and new job now fit into the limit of 4 GPUs.
 
