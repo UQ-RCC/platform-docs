@@ -1,8 +1,7 @@
 ---
-title: "Bunya user data spaces operational procedure"
+title: "Bunya User Data Spaces Operational Procedure"
 ---
-
-## Bunya User Data Spaces Operational Procedure 
+ 
 
 
 In below clauses:   
