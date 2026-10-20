@@ -5,7 +5,7 @@ title: "Bunya User Data Guide"
 
 Bunya has several spaces users have access to to keep their data and software.<br>
 :::caution[IMPORTANT]
-These spaces are subject to the [Bunya User Data Spaces Operational Procedure](../../policy/local-standard-operating-procedures/bunya-user-data-spaces-operational-procedure) and the [UQ Research Data Management Policy](https://policies.uq.edu.au/document/view-current.php?id=120) and [UQ Research Data Management Procedure](https://policies.uq.edu.au/document/view-current.php?id=476&version=1).
+These spaces are subject to the [Bunya User Data Spaces Operational Procedure](../../../policy/local-standard-operating-procedures/bunya-user-data-spaces-operational-procedure) and the [UQ Research Data Management Policy](https://policies.uq.edu.au/document/view-current.php?id=120) and [UQ Research Data Management Procedure](https://policies.uq.edu.au/document/view-current.php?id=476&version=1).
 :::
 
 
