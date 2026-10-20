@@ -30,7 +30,7 @@ Bunya uses [*Apptainer*](https://apptainer.org/docs/user/latest/introduction.htm
 
 * Apptainer is installed into the operating system on every compute node.
 * Apptainer is _not_ installed on the Bunya login nodes.
-* You must use an interactive job via the batch system (or an [onBunya](http://bunya-ondemand.rcc.uq.edu.au/) session) to be able to reach compute nodes and use apptainer.
+* You must use an interactive job via the batch system (or an [onBunya](http://onbunya.rcc.uq.edu.au/) session) to be able to reach compute nodes and use apptainer.
 * You do *not* need to load a software module to use the apptainer command.
 
 ## Gotchas
