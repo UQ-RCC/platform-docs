@@ -5,7 +5,7 @@ title: Administration of Accounting Groups
 
 ## Accounting group operational procedure
 
-Accounting group owners and administrators should read and consult the [Accounting Group Operational Procedure](../../policy/local-standard-operating-procedures/bunya-accounting-group-operational-procedure).
+Accounting group owners and administrators should read and consult the [Accounting Group Operational Procedure](../../../policy/local-standard-operating-procedures/bunya-accounting-group-operational-procedure).
 
 ## Accounting groups
 
