@@ -32,7 +32,7 @@ In below clauses:
 
 5) Users must agree to the [Bunya Access Conditions](../../conditions-of-access//bunya-conditions-of-access) and the [UQ Conditions of Access to RCC Infrastructure](../../conditions-of-access/uq-conditions-of-access-to-rcc-infrastructure) when applying for access to Bunya through the Bunya application process. 
 
-6) Bunya users must comply with the Bunya Access Conditions (https://github.com/UQ-RCC/hpc-docs/blob/main/policy/Bunya-Conditions-of-Access.md) and the UQ Conditions of Access to RCC Infrastructure (https://github.com/UQ-RCC/hpc-docs/blob/main/policy/UQ-Conditions-of-Access-to-RCC-Infrastructure.pdf).  
+6) Bunya users must comply with the [Bunya Access Conditions](../../conditions-of-access/bunya-conditions-of-access) and the [UQ Conditions of Access to RCC Infrastructure](../../conditions-of-access/uq-conditions-of-access-to-rcc-infrastructure).  
 
 7) Bunya users should acknowledge their usage of Bunya resources and support in their resulting research output. Suitable acknowledgements are outlined under [acknowledging RCC and Bunya](https://rcc.uq.edu.au/about/acknowledging-rcc).
 
