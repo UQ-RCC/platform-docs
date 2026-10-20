@@ -1,4 +1,4 @@
 ---
 title: "UQ Conditions of Access to RCC Infrastructure"
 ---
-[UQ Conditions of Access to RCC Infrastructure](UQ-Conditions-of-Access-to-RCC-Infrastructure.pdf){target="_blank"}
+[UQ Conditions of Access to RCC Infrastructure](UQ-Conditions-of-Access-to-RCC-Infrastructure)
