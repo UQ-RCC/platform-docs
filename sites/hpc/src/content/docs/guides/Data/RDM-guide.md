@@ -68,7 +68,7 @@ Please refer to the [Bunya Storage User Guide section](../bunya-userdata-guide/#
 
 ---
 
-![](../../media/rdm-graph-git.png)
+![](../../media/RDM-graph-Git.png)
 
 The diagram above shows a simplified view of the different ways (paths) a Q storage record can be accessed. 
 * *"Q" collections* represent the tape part of the RDM. Data here is backed up and can be recovered if it has been deleted or corrupted recently.
