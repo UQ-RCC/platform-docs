@@ -23,7 +23,7 @@ Instructions how to administer accounting groups and accounting strings can be f
 
 ## Bunya User Account Operational Procedure
 
-User access to Bunya is outlined [here](../local-standard-operating-procesdures/bunya-user-operational-procedure).
+User access to Bunya is outlined [here](../local-standard-operating-procedures/bunya-user-operational-procedure).
 
 ## Bunya User Data Spaces Operational Procedure
 
