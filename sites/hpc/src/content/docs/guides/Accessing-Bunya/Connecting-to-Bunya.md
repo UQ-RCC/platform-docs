@@ -120,7 +120,7 @@ Some network devices and firewalls may terminate inactive ssh connections. To he
 
 ### SSH multiplexing
 
-SHH multiplexing allows multiple and subsequent sessions to use the same initial ssh connection without having to authenticate again. See the [guide on SSH multiplexing](../bunya-ssh-multiplexing) for more details.
+SHH multiplexing allows multiple and subsequent sessions to use the same initial ssh connection without having to authenticate again. See the [guide on SSH multiplexing](../bunya-ssh-multiplexing-guide) for more details.
 
 ### VS Code and other IDEs
 
