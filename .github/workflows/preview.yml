@@ -53,8 +53,10 @@ jobs:
           sparse-checkout: .github/scripts
 
       - name: Mark preview as pending
+        continue-on-error: true
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9
         with:
+          retries: 3
           script: |
             const panel = require('./.github/scripts/preview-panel.cjs');
             const pull = await panel.findPull({ github, context }, process.env.BRANCH);
@@ -161,6 +163,7 @@ jobs:
         env:
           SITES: ${{ needs.sites.outputs.list }}
         with:
+          retries: 3
           script: |
             const fs = require('node:fs');
             const path = require('node:path');
