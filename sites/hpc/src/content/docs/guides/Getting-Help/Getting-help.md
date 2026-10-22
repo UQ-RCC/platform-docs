@@ -13,7 +13,7 @@ For more complicated questions and problems, or where a back and forth of emails
 
 ## Getting hands-on help
 
-RCC can assist with specific software or HPC usage issues through two weekly meetups that are run via Zoom (changing to teams in 2027).
+RCC can assist with specific software or HPC usage issues through two weekly meetups that are run via Zoom (changing to Teams in 2027).
 
 - [Hacky Hour UQ 1-2pm Tuesdays](https://rcc.uq.edu.au/training-support/meetups#Hacky%20Hour%20UQ%C2%A0%C2%A0)<br>
 Members of the RCC Support team, the Data Science team, and the Library are available to help. <br>
