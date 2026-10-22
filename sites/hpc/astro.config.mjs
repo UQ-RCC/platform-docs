@@ -76,7 +76,7 @@ export default defineConfig({
             { label: 'AGENTS.md', slug: 'guides/ai-llm-agents/agents'},
           ]},
 //
-          { label: 'Getting Help', items[
+          { label: 'Getting Help', items: [
           { label: 'Getting Help', slug: 'guides/getting-help/getting-help'},
           ]},
 //          
