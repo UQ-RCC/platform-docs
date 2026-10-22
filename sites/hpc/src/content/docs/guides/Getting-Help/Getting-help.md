@@ -8,7 +8,7 @@ The quickest way to get help with problems, questions, concerns, etc is to conta
 
 rcc-support@uq.edu.au
 
-For more complicated questions and problem, or where a back and forth of emails would be required, RCC Support will ask users to attend one of RCC Support's drop in sessions, see [below](#getting-hands-on-help)
+For more complicated questions and problems, or where a back and forth of emails would be required, RCC Support will ask users to attend one of RCC Support's drop in sessions, see [below](#getting-hands-on-help)
 
 
 ## Getting hands-on help
