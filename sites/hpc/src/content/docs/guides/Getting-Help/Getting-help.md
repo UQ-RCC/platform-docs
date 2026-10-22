@@ -27,13 +27,10 @@ This meetup is primarily about HPC usage and not for specialised help with genom
 
 ## Escalating concerns or complaints which will be treated confidentially
 
-Concerns or complaints can be escalated by contacting
+Concerns or complaints about RCC staff can be escalated by contacting
 
 director@rcc.uq.edu.au
 
-Concerns or complaints submitted to the RCC director will be treated confidentially.
+Concerns or complaints about RCC staff submitted to the RCC director will be treated confidentially.
 
-These can include concerns/complaints about RCC staff, handling of user tickets, and user support in general.
-
-Complaints that are technical in nature, Bunya hardware, software, and setup, should where possible be directed to RCC Support (rcc-support@uq.edu.au).
- 
+Complaints that are technical in nature, Bunya hardware, software, setup, and Bunya in general, should be directed to RCC Support (rcc-support@uq.edu.au).
