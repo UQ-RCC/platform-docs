@@ -14,7 +14,7 @@ title: "Bunya user guide"
 * [Software on Bunya](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#software)
 * [Conda on Bunya](conda-environment.md)
 * [Using software containers on Bunya](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#using-software-containers-on-bunya)
-* [Fair Share on Bunya](FairShare.md)
+* [Fair Share on Bunya](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/FairShare.md)
 * [Available hardware and user limits](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#qos-use-and-limits)
 * [Interactive batch jobs](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#interactive-jobs)
 * [SLURM scripts and examples](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#slurm-scripts)
@@ -401,7 +401,7 @@ Additionally, R packages built on the newer EPYC4 CPU nodes are known _not_ to w
 
 Similary to information about for R packages. Python environments built with/for/on Tinaroo and FlashLite need to be reinstalled on Bunya.
 
-Please see [here](conda-environment.md) for more information on how to build conda environments on Bunya.
+Please see [here](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/conda-environment.md) for more information on how to build conda environments on Bunya.
 
 #### Building software using EasyBuild
 
@@ -510,7 +510,7 @@ Refer to this more [detailed guide about using apptainer](https://github.com/UQ-
 
 ## Fair Share
 
-Bunya employs [fair share](FairShare.md) to ensure that each user is able to use Bunya resources.
+Bunya employs [fair share](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/FairShare.md) to ensure that each user is able to use Bunya resources.
 
 ## Interactive jobs
 
@@ -521,7 +521,7 @@ Bunya employs [fair share](FairShare.md) to ensure that each user is able to use
 >
 >This includes software installations. Conda create, pip installs and R install.packages should be run via an interactive job not on the login nodes. Software installations using make and then make install (or cmake) especially are not suitable to be done on a login node. For these users should be careful choosing the correct architecture, see [here](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#how-to-build-your-own-software)
 >
->Users can use interactive jobs which will give them that command line feel and flexibility and allow the use of graphical user interfaces. Users who need a Graphical User Interface (GUI) should consult the [onBunya User Guide](./OnDemand-Guide.md). 
+>Users can use interactive jobs which will give them that command line feel and flexibility and allow the use of graphical user interfaces. Users who need a Graphical User Interface (GUI) should consult the [onBunya User Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/OnDemand-Guide.md). 
 >
 >Users have access to a `debug` QoS for quick testing of new jobs and codes etc.
 >
@@ -592,7 +592,7 @@ See [here](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Slurm-Tips.md) fo
 
 ### Interactive MPI jobs only (for experts)
 
-Instructions for **experts** who know what they are doing in terms of MPI and its usage can be found [here (for MPI experts only)](Expert-only-MPI-testing.md)
+Instructions for **experts** who know what they are doing in terms of MPI and its usage can be found [here (for MPI experts only)](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Expert-only-MPI-testing.md)
 
 
 ## Available partitions
