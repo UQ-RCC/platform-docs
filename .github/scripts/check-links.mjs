@@ -68,7 +68,12 @@ const redirectUrl = (file) => {
 const ids = (file) =>
   new Set([...html(file).matchAll(/\bid=(['"])(.*?)\1/gi)].map((match) => match[2]));
 
-const errors = [];
+// The Edit page link names the source file behind each built page.
+const sourceFile = (file) =>
+  html(file).match(/href="https:\/\/github\.com\/[^/]+\/[^/]+\/edit\/[^/]+\/([^"]+)"/)?.[1] ?? pageUrl(file);
+
+const problems = [];
+let pages = 0;
 let links = 0;
 let redirects = 0;
 
@@ -76,33 +81,56 @@ for (const source of htmlFiles) {
   const redirect = redirectUrl(source);
   if (redirect) {
     redirects += 1;
+    const where = `redirect ${pageUrl(source)} (astro.config.mjs)`;
     const result = resolveLink(redirect, source);
     if (!result || result.error) {
-      errors.push(`${pageUrl(source)} -> ${redirect}: redirect target does not exist`);
+      problems.push({ where, link: redirect, reason: 'redirect target does not exist' });
     } else if (redirectUrl(result.target)) {
-      errors.push(`${pageUrl(source)} -> ${redirect}: redirect target is another redirect`);
+      problems.push({ where, link: redirect, reason: 'redirect target is another redirect' });
     } else if (result.fragment && !ids(result.target).has(result.fragment)) {
-      errors.push(`${pageUrl(source)} -> ${redirect}: redirect fragment does not exist`);
+      problems.push({ where, link: redirect, reason: 'redirect fragment does not exist' });
     }
     continue;
   }
 
+  pages += 1;
+  const where = sourceFile(source);
   for (const match of html(source).matchAll(/\bhref=(['"])(.*?)\1/gi)) {
     const raw = match[2];
     const result = resolveLink(raw, source);
     if (!result) continue;
     links += 1;
     if (result.error) {
-      errors.push(`${pageUrl(source)} -> ${raw}: ${result.error}`);
+      problems.push({ where, link: raw, reason: result.error });
     } else if (result.fragment && result.target.endsWith('.html') && !ids(result.target).has(result.fragment)) {
-      errors.push(`${pageUrl(source)} -> ${raw}: fragment does not exist`);
+      problems.push({ where, link: raw, reason: 'fragment does not exist' });
     }
   }
 }
 
-if (errors.length) {
-  console.error([...new Set(errors)].join('\n'));
+console.log(`Checked ${htmlFiles.length} HTML files, ${links} internal links and ${redirects} redirects.`);
+
+if (problems.length) {
+  // A link broken on every page comes from the site config or layout, not page content.
+  const key = (p) => `${p.link} (${p.reason})`;
+  const pagesWith = new Map();
+  for (const p of problems) pagesWith.set(key(p), (pagesWith.get(key(p)) ?? new Set()).add(p.where));
+  const siteWide = new Set([...pagesWith].filter(([, w]) => pages > 1 && w.size >= pages).map(([k]) => k));
+
+  const byFile = new Map();
+  for (const p of problems) {
+    if (siteWide.has(key(p))) continue;
+    if (!byFile.has(p.where)) byFile.set(p.where, new Set());
+    byFile.get(p.where).add(key(p));
+  }
+
+  const lines = ['', 'Broken links to fix:'];
+  for (const [file, items] of [...byFile].sort()) {
+    lines.push('', file, ...[...items].map((item) => `  ${item}`));
+  }
+  if (siteWide.size) {
+    lines.push('', 'On every page (site config or layout, not page content):', ...[...siteWide].map((item) => `  ${item}`));
+  }
+  console.error(lines.join('\n'));
   process.exit(1);
 }
-
-console.log(`Checked ${htmlFiles.length} HTML files, ${links} internal links and ${redirects} redirects.`);
