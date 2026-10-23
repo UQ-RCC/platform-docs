@@ -104,6 +104,8 @@ The dev server keeps running in the background after the command returns. Stop i
 
 2. Create a shell repository for the site in UQ-RCC GitHub
 
+   | Setting                | Value                                 |
+   | ---                    | ---                                   |
    | Repository name        | `docs.<site>.rcc.uq.edu.au`A          |
    | Repository description | `shell repo for <site> platform-docs` |
 
@@ -118,7 +120,7 @@ The dev server keeps running in the background after the command returns. Stop i
 
 5. Navigate to **Settings** -> **Secrets and variables** -> **Actions** ->
    **Repository secrets** in the **platform-docs** repository and add the private
-   key using `DEPLOY_KEY_<SERVICE>` as the secret name
+   key using `DEPLOY_KEY_<SITE>` as the secret name
 
 6. Add site to the [Sites and preview links](#sites-and-preview-links) table
 
