@@ -6,7 +6,7 @@ title: "Software status"
 
 ## Graphical or Browser Software
 
-Please consult the  [onBunya User Guide](../guides/OnDemand-Guide.md) to see which software is installed and how to run. RStudio, Jupyter Notebooks and Labs, Gaussview, Mathematica and many CVL apps are available through onBunya.
+Please consult the  [onBunya User Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/OnDemand-Guide.md) to see which software is installed and how to run. RStudio, Jupyter Notebooks and Labs, Gaussview, Mathematica and many CVL apps are available through onBunya.
 
 ## Licensed Software 
 
@@ -16,7 +16,7 @@ Please consult the  [onBunya User Guide](../guides/OnDemand-Guide.md) to see whi
 
 * Access is restricted to UQ users
 
-* See [onBunya User Guide](../guides/OnDemand-Guide.md)
+* See [onBunya User Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/OnDemand-Guide.md)
 
 ### SPSS Statistics
 
@@ -24,7 +24,7 @@ Please consult the  [onBunya User Guide](../guides/OnDemand-Guide.md) to see whi
 
 * Access is restrcited to UQ users
 
-See [onBunya User Guide](../guides/OnDemand-Guide.md)
+See [onBunya User Guide](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/OnDemand-Guide.md)
 
 
 ### STATA
