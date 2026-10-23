@@ -7,7 +7,7 @@ Documentation for UQ Research Computing Centre (RCC) platforms, built with [Astr
 | XNAT | `sites/xnat` | https://docs.xnat.rcc.uq.edu.au | https://uq-rcc-xnat.pages.dev |
 | Pitschi | `sites/pitschi` | Not yet published | https://uq-rcc-pitschi.pages.dev |
 | HPC | `sites/hpc` | Not yet published | https://uq-rcc-hpc.pages.dev |
-| REDCap | `sites/redcap` | Not yet published | https://uq-rcc-redcap.pages.dev |
+| REDCap | `sites/redcap` | https://docs.redcap.rcc.uq.edu.au | https://uq-rcc-redcap.pages.dev |
 
 > [!NOTE]
 > Site previews always show the latest version of `main`. Production only changes when someone runs **Promote to production**.
