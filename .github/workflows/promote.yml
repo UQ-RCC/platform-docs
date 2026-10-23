@@ -17,6 +17,10 @@ on:
         description: HPC
         type: boolean
         default: false
+      redcap:
+        description: REDCap
+        type: boolean
+        default: false
 
 permissions: {}
 
@@ -51,7 +55,7 @@ jobs:
       # Secrets are named statically so the runner only receives the deploy keys.
       - name: Check deploy key
         env:
-          KEY: ${{ matrix.site == 'xnat' && secrets.DEPLOY_KEY_XNAT || matrix.site == 'pitschi' && secrets.DEPLOY_KEY_PITSCHI || matrix.site == 'hpc' && secrets.DEPLOY_KEY_HPC || '' }}
+          KEY: ${{ matrix.site == 'xnat' && secrets.DEPLOY_KEY_XNAT || matrix.site == 'pitschi' && secrets.DEPLOY_KEY_PITSCHI || matrix.site == 'hpc' && secrets.DEPLOY_KEY_HPC || matrix.site == 'redcap' && secrets.DEPLOY_KEY_REDCAP || '' }}
           SITE: ${{ matrix.site }}
           REPO: UQ-RCC/docs.${{ matrix.site }}.rcc.uq.edu.au
         run: |
@@ -86,7 +90,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4.1.0
         with:
-          deploy_key: ${{ matrix.site == 'xnat' && secrets.DEPLOY_KEY_XNAT || matrix.site == 'pitschi' && secrets.DEPLOY_KEY_PITSCHI || matrix.site == 'hpc' && secrets.DEPLOY_KEY_HPC || '' }}
+          deploy_key: ${{ matrix.site == 'xnat' && secrets.DEPLOY_KEY_XNAT || matrix.site == 'pitschi' && secrets.DEPLOY_KEY_PITSCHI || matrix.site == 'hpc' && secrets.DEPLOY_KEY_HPC || matrix.site == 'redcap' && secrets.DEPLOY_KEY_REDCAP || '' }}
           external_repository: UQ-RCC/docs.${{ matrix.site }}.rcc.uq.edu.au
           publish_branch: gh-pages
           publish_dir: ./sites/${{ matrix.site }}/dist

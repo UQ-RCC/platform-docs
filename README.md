@@ -126,6 +126,9 @@ The dev server keeps running in the background after the command returns. Stop i
    folder in [sites](tree/main/sites) with the required name. Find and replace
    occurrences of 'example' (case insensitive) with the site name.
 
+8. Add site to the [Promote to production](blob/main/.github/workflows/promote.yml)
+   workflow following the pattern used for other sites.
+
 8. Push your updates then run the **Promote to production** workflow 
 
 9. Open the shell repository and navigate to **Settings** -> **Pages**. Set **Custom
