@@ -106,7 +106,7 @@ The dev server keeps running in the background after the command returns. Stop i
 
    | Setting                | Value                                 |
    | ---                    | ---                                   |
-   | Repository name        | `docs.<site>.rcc.uq.edu.au`A          |
+   | Repository name        | `docs.<site>.rcc.uq.edu.au`           |
    | Repository description | `shell repo for <site> platform-docs` |
 
 3. Generate an SSH key pair for deploying the site
@@ -116,22 +116,22 @@ The dev server keeps running in the background after the command returns. Stop i
    ```
 
 4. Navigate to **Settings** -> **Deploy keys** and add the public key using
-   `platform-docs-<site>` as the deploy key name
+   `platform-docs-<site>` as the deploy key name.
 
 5. Navigate to **Settings** -> **Secrets and variables** -> **Actions** ->
    **Repository secrets** in the **platform-docs** repository and add the private
-   key using `DEPLOY_KEY_<SITE>` as the secret name
+   key using `DEPLOY_KEY_<SITE>` as the secret name.
 
-6. Add site to the [Sites and preview links](#sites-and-preview-links) table
+6. Add site to the [Sites and preview links](#sites-and-preview-links) table.
 
-7. Add a site folder. Make a copy of the [tempate](tree/main/template)
-   folder in [sites](tree/main/sites) with the required name. Find and replace
+7. Add a site folder. Make a copy of the [tempate](template)
+   folder in [sites](sites) with the required name. Find and replace
    occurrences of 'example' (case insensitive) with the site name.
 
-8. Add site to the [Promote to production](blob/main/.github/workflows/promote.yml)
+8. Add site to the [Promote to production](.github/workflows/promote.yml)
    workflow following the pattern used for other sites.
 
-8. Push your updates then run the **Promote to production** workflow 
+8. Push your updates then run the **Promote to production** workflow.
 
 9. Open the shell repository and navigate to **Settings** -> **Pages**. Set **Custom
-   domain** to your site DNS name and enable **Enforce HTTPS**
+   domain** to your site DNS name and enable **Enforce HTTPS**.
