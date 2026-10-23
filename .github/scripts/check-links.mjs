@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
+import { appendFileSync, existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative, resolve, sep } from 'node:path';
 
 const root = resolve(process.argv[2] ?? 'dist');
@@ -132,5 +132,23 @@ if (problems.length) {
     lines.push('', 'On every page (site config or layout, not page content):', ...[...siteWide].map((item) => `  ${item}`));
   }
   console.error(lines.join('\n'));
+
+  // In GitHub Actions, also write a table to the job summary, linking each file at this commit.
+  const { GITHUB_STEP_SUMMARY, GITHUB_SERVER_URL, GITHUB_REPOSITORY, GITHUB_SHA } = process.env;
+  if (GITHUB_STEP_SUMMARY) {
+    const cell = (text) => `\`${text.replaceAll('|', '\\|')}\``;
+    const fileCell = (file) =>
+      file.startsWith('sites/') && GITHUB_SHA
+        ? `[${cell(file)}](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/blob/${GITHUB_SHA}/${file})`
+        : cell(file);
+    const row = (file, item) => {
+      const [, link, reason] = item.match(/^(.*) \((.*)\)$/);
+      return `| ${file} | ${cell(link)} | ${reason} |`;
+    };
+    const md = ['### Broken links', '', '| File | Broken link | Problem |', '| --- | --- | --- |'];
+    for (const [file, items] of [...byFile].sort()) for (const item of items) md.push(row(fileCell(file), item));
+    for (const item of siteWide) md.push(row('Every page (site config or layout)', item));
+    appendFileSync(GITHUB_STEP_SUMMARY, `${md.join('\n')}\n`);
+  }
   process.exit(1);
 }
