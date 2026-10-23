@@ -12,7 +12,7 @@ title: "Bunya user guide"
 * [Connecting to Bunya](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#connecting)
 * [Transferring files](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#file-transfer)
 * [Software on Bunya](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#software)
-* [Conda on Bunya](conda-environment.md)
+* [Conda on Bunya](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/conda-environment.md)
 * [Using software containers on Bunya](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#using-software-containers-on-bunya)
 * [Fair Share on Bunya](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/FairShare.md)
 * [Available hardware and user limits](https://github.com/UQ-RCC/hpc-docs/blob/main/guides/Bunya-User-Guide.md#qos-use-and-limits)
