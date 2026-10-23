@@ -7,6 +7,7 @@ Documentation for UQ Research Computing Centre (RCC) platforms, built with [Astr
 | XNAT | `sites/xnat` | https://docs.xnat.rcc.uq.edu.au | https://uq-rcc-xnat.pages.dev |
 | Pitschi | `sites/pitschi` | Not yet published | https://uq-rcc-pitschi.pages.dev |
 | HPC | `sites/hpc` | Not yet published | https://uq-rcc-hpc.pages.dev |
+| REDCap | `sites/redcap` | Not yet published | https://uq-rcc-redcap.pages.dev |
 
 > [!NOTE]
 > Site previews always show the latest version of `main`. Production only changes when someone runs **Promote to production**.
@@ -84,3 +85,48 @@ The dev server keeps running in the background after the command returns. Stop i
 <a href=".github/workflows">.github/workflows/</a>           Build, Preview and Promote to production
 <a href=".github/scripts">.github/scripts/</a>             link checker and preview panel
 </pre>
+
+
+# Adding new sites
+
+> [!WARNING]
+> Under construction
+
+> [!NOTE]
+> Requires repository admin access.
+
+1. Create a DNS CNAME record for the site
+
+   ```
+   docs.<site>.rcc.uq.edu.au.
+   CNAME uq-rcc.github.io.
+   ```
+
+2. Create a shell repository for the site in UQ-RCC GitHub
+
+   | Repository name        | `docs.<site>.rcc.uq.edu.au`A          |
+   | Repository description | `shell repo for <site> platform-docs` |
+
+3. Generate an SSH key pair for deploying the site
+
+   ```
+   ssh-keygen -t rsa -b 4096 -C "rcc-support@uq.edu.au"
+   ```
+
+4. Navigate to **Settings** -> **Deploy keys** and add the public key using
+   `platform-docs-<site>` as the deploy key name
+
+5. Navigate to **Settings** -> **Secrets and variables** -> **Actions** ->
+   **Repository secrets** in the **platform-docs** repository and add the private
+   key using `DEPLOY_KEY_<SERVICE>` as the secret name
+
+6. Add site to the [Sites and preview links](#sites-and-preview-links) table
+
+7. Add a site folder. Make a copy of the [tempate](tree/main/template)
+   folder in [sites](tree/main/sites) with the required name. Find and replace
+   occurrences of 'example' (case insensitive) with the site name.
+
+8. Push your updates then run the **Promote to production** workflow 
+
+9. Open the shell repository and navigate to **Settings** -> **Pages**. Set **Custom
+   domain** to your site DNS name and enable **Enforce HTTPS**
