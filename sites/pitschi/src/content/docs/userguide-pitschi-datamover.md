@@ -62,4 +62,4 @@ you need to select a project from the dropdown list, then enter the experiment n
 ![image](images/datamover/pitschi9.png)
 
 
-# 3. <a href="/pitschi-docs/#/faq-datamover">FAQs</a>
+# 3. <a href="/faq-datamover">FAQs</a>

@@ -22,10 +22,10 @@ In for some reasons, the camera computer cannot be modified, or the RDM cannot b
 Pitschi relies on the [MeDICI](https://rcc.uq.edu.au/data-storage) for data movement and [UQ RDM](https://research.uq.edu.au/rmbt/uqrdm) for data storage. The booking information is queried from PPMS.
 
 Pitschi consists of the following components:
-* **[Clowder](github.com/UQ-RCC/clowder)**: a modified version of the Clowder framework for data management and automatic metadata extraction
-* **[XAPI](github.com/UQ-RCC/xapi)**: an API to manage data importation from RDM storage collections. The booking information from PPMS is cached in this XAPI as well. 
-* **[Pitschi-cli](github.com/UQ-RCC/pitschi-cli)**: A desktop client residing in the instrument computers for syncing datasets and files to the project's storage collection.  
-* **[DataMover](github.com/UQ-RCC/pitschidatamover)**: a Web service to handle 1) mounting of correct collection to the third party computer 2) sync the data and 3) ingest the data to Clowder. This Web service provides a client, which can be accessible from the camera machine.
+* **[Clowder](https://github.com/UQ-RCC/clowder)**: a modified version of the Clowder framework for data management and automatic metadata extraction
+* **[XAPI](https://github.com/UQ-RCC/xapi)**: an API to manage data importation from RDM storage collections. The booking information from PPMS is cached in this XAPI as well. 
+* **[Pitschi-cli](https://github.com/UQ-RCC/pitschi-cli)**: A desktop client residing in the instrument computers for syncing datasets and files to the project's storage collection.  
+* **[DataMover](https://github.com/UQ-RCC/pitschidatamover)**: a Web service to handle 1) mounting of correct collection to the third party computer 2) sync the data and 3) ingest the data to Clowder. This Web service provides a client, which can be accessible from the camera machine.
 
 # Deployment
 Pitschi is deployed on a [Docker Swarm Cluster](https://docs.docker.com/engine/swarm/) on top of the [QRISCloud](https://www.qriscloud.org.au/) (OpenStack) research cloud. [Ansible](https://www.ansible.com/) 2.9 is used provision the stack. The deployment code can be found [here](https://github.com/UQ-RCC/ansible-swarm-clowder)

@@ -22,17 +22,17 @@ In order to do so, Pitschi integrates multiple services available to UQ, includi
 
 ## User Guides
 
-### <a href="/pitschi-docs/#/userguide-tracker">Tracker only (for Clients)</a>
+### <a href="/userguide-tracker">Tracker only (for Clients)</a>
 
-### <a href="/pitschi-docs/#/userguide-tracker(admin)">Tracker only (for Admins)</a>
+### <a href="/userguide-tracker(admin)">Tracker only (for Admins)</a>
 
-### <a href="/pitschi-docs/#/userguide-pitschi">Pitschi</a>
+### <a href="/userguide-pitschi">Pitschi</a>
 
-### <a href="/pitschi-docs/#/checklist-pitschi">Pitschi Checklist</a>
+### <a href="/checklist-pitschi">Pitschi Checklist</a>
 
-### <a href="/pitschi-docs/#/faq">FAQ</a>
+### <a href="/faq">FAQ</a>
 
-### <a href="/pitschi-docs/#/faq-uqrdmcollection">Setup UQRDM/PITSCHI account</a>
+### <a href="/faq-uqrdmcollection">Setup UQRDM/PITSCHI account</a>
 
 ## Instruments
 <b>Instrument list</b> (Click on the instrument name to goto instrument calendar).

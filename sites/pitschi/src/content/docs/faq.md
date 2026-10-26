@@ -8,7 +8,7 @@ title: "FAQ"
 
 **[4ceed](https://4ceed.github.io/)** is a modified version of Clowder, focusing on material sciences. 
 
-**[Pitschi](pitschi.rcc.uq.edu.au/)** is also an instance of Clowder, customised for UQ infrastructure. Pitschi also consists of components to capture data from the instrument computer. 
+**[Pitschi](https://pitschi.rcc.uq.edu.au)** is also an instance of Clowder, customised for UQ infrastructure. Pitschi also consists of components to capture data from the instrument computer. 
 
 # How do PPMS and Pitschi behave in these scenarios ?
 1) 
@@ -85,10 +85,10 @@ The backup code can also be used for users without PPMS accounts.
 The backup code will be provided to lab managers and instrument custodians. 
 
 
-# How do I create an account in the [Pitschi](pitschi.rcc.uq.edu.au) website ?
+# How do I create an account in the [Pitschi](https://pitschi.rcc.uq.edu.au) website ?
 Pitschi does not support manual account creation. 
 
-Instead, it syncs projects from PPMS with valid RDMs to its database. So if you want to have an account in the [Pitschi](pitschi.rcc.uq.edu.au) website, make sure you are in a PPMS project with valid RDM. 
+Instead, it syncs projects from PPMS with valid RDMs to its database. So if you want to have an account in the [Pitschi](https://pitschi.rcc.uq.edu.au) website, make sure you are in a PPMS project with valid RDM. 
 
 
 # I have an existing project in PPMS with an existing RDM. How do I ingest data to Pitschi ?
