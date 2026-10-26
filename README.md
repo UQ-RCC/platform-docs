@@ -5,8 +5,8 @@ Documentation for UQ Research Computing Centre (RCC) platforms, built with [Astr
 | Site | Folder | Production | Site preview |
 | --- | --- | --- | --- |
 | XNAT | `sites/xnat` | https://docs.xnat.rcc.uq.edu.au | https://uq-rcc-xnat.pages.dev |
-| Pitschi | `sites/pitschi` | Not yet published | https://uq-rcc-pitschi.pages.dev |
-| HPC | `sites/hpc` | Not yet published | https://uq-rcc-hpc.pages.dev |
+| Pitschi | `sites/pitschi` | https://docs.pitschi.rcc.uq.edu.au | https://uq-rcc-pitschi.pages.dev |
+| HPC | `sites/hpc` | https://docs.hpc.rcc.uq.edu.au | https://uq-rcc-hpc.pages.dev |
 | REDCap | `sites/redcap` | https://docs.redcap.rcc.uq.edu.au | https://uq-rcc-redcap.pages.dev |
 
 > [!NOTE]
