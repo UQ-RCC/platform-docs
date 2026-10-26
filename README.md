@@ -95,43 +95,54 @@ The dev server keeps running in the background after the command returns. Stop i
 > [!NOTE]
 > Requires repository admin access.
 
-1. Create a DNS CNAME record for the site
-
-   ```
-   docs.<site>.rcc.uq.edu.au.
-   CNAME uq-rcc.github.io.
-   ```
-
-2. Create a shell repository for the site in UQ-RCC GitHub
+1. Create a shell repository for the site in UQ-RCC GitHub
 
    | Setting                | Value                                 |
    | ---                    | ---                                   |
    | Repository name        | `docs.<site>.rcc.uq.edu.au`           |
    | Repository description | `shell repo for <site> platform-docs` |
 
-3. Generate an SSH key pair for deploying the site
+2. Generate an SSH key pair for deploying the site
 
    ```
    ssh-keygen -t rsa -b 4096 -C "rcc-support@uq.edu.au"
    ```
 
-4. Navigate to **Settings** -> **Deploy keys** and add the public key using
+3. Navigate to **Settings** -> **Deploy keys** and add the public key using
    `platform-docs-<site>` as the deploy key name.
 
-5. Navigate to **Settings** -> **Secrets and variables** -> **Actions** ->
+4. Navigate to **Settings** -> **Secrets and variables** -> **Actions** ->
    **Repository secrets** in the **platform-docs** repository and add the private
    key using `DEPLOY_KEY_<SITE>` as the secret name.
 
-6. Add site to the [Sites and preview links](#sites-and-preview-links) table.
+5. Add site to the [Sites and preview links](#sites-and-preview-links) table.
 
-7. Add a site folder. Make a copy of the [tempate](template)
+6. Add a site folder. Make a copy of the [tempate](template)
    folder in [sites](sites) with the required name. Find and replace
    occurrences of 'example' (case insensitive) with the site name.
 
-8. Add site to the [Promote to production](.github/workflows/promote.yml)
+7. Add site to the [Promote to production](.github/workflows/promote.yml)
    workflow following the pattern used for other sites.
 
 8. Push your updates then run the **Promote to production** workflow.
 
-9. Open the shell repository and navigate to **Settings** -> **Pages**. Set **Custom
+Create a DNS CNAME record for the site and assign it to the shell repo
+
+> [!IMPORTANT]
+> Do not create the site DNS record until it has been successfully pushed. Your
+> DNS name may be hijacked if there is a delay between the following steps
+
+1. Open the shell repository and navigate to **Settings** -> **Pages**. Confirm
+   **Custom domain** field is ready for assignment.
+
+2. Add DNS record (requires DNS service provider admin access)
+
+   ```
+   docs.<site>.rcc.uq.edu.au.
+   CNAME uq-rcc.github.io.
+   ```
+
+3. Confirm DNS record resolves correctly using `dig` command or similar
+
+4. Return to **Settings** -> **Pages** in the shell repository and set **Custom
    domain** to your site DNS name and enable **Enforce HTTPS**.
