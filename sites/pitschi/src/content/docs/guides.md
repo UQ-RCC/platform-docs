@@ -24,7 +24,7 @@ In order to do so, Pitschi integrates multiple services available to UQ, includi
 
 ### <a href="/userguide-tracker">Tracker only (for Clients)</a>
 
-### <a href="/userguide-tracker(admin)">Tracker only (for Admins)</a>
+### <a href="/userguide-tracker-admin">Tracker only (for Admins)</a>
 
 ### <a href="/userguide-pitschi">Pitschi</a>
 

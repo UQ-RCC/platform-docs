@@ -129,20 +129,21 @@ The dev server keeps running in the background after the command returns. Stop i
 Create a DNS CNAME record for the site and assign it to the shell repo
 
 > [!IMPORTANT]
-> Do not create the site DNS record until it has been successfully pushed. Your
-> DNS name may be hijacked if there is a delay between the following steps
+> Do not create the site DNS record until the site has been successfully
+> pushed. Your DNS name may be hijacked if there is a delay between the
+> following steps.
 
 1. Open the shell repository and navigate to **Settings** -> **Pages**. Confirm
    **Custom domain** field is ready for assignment.
 
-2. Add DNS record (requires DNS service provider admin access)
+2. Add DNS record (requires DNS service provider admin access).
 
    ```
    docs.<site>.rcc.uq.edu.au.
    CNAME uq-rcc.github.io.
    ```
 
-3. Confirm DNS record resolves correctly using `dig` command or similar
+3. Confirm DNS record resolves correctly using `dig` command or similar.
 
 4. Return to **Settings** -> **Pages** in the shell repository and set **Custom
    domain** to your site DNS name and enable **Enforce HTTPS**.
