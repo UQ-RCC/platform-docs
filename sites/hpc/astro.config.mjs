@@ -57,6 +57,7 @@ export default defineConfig({
             { label: 'Transferring Data', slug: 'guides/data/datatransfer'},
             { label: 'Available Data Sets and Models', slug: 'guides/data/list-of-datasets'},
             { label: 'UQRDM Access on Bunya', slug: 'guides/data/rdm-guide'},
+            { label: 'Globus', slug: 'guides/data/basic-globus'},
           ]},
 //          
           { label: 'Software on Bunya', items: [
