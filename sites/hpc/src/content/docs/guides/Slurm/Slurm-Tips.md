@@ -36,7 +36,7 @@ This allows Slurm to schedule the job onto suitable 80GB A100 or H100 resources.
 
 ## Target any H100
 
-The H100 nodes in the `gpu_cuda` and the `gpu_sxm` partition are a different architecture. If your code can run on both standard H100 and H100 SXM nodes, you can allow Slurm to schedule on either partition:
+The H100 nodes in the `gpu_cuda` and the `gpu_sxm` partition are a different architecture. **Important** cuda 12.2 or higher is required to run on the `gpu_sxm` partition. If your code can run on both standard H100 and H100 SXM nodes, you can allow Slurm to schedule on either partition:
 
 ```
 #SBATCH --gres=gpu:h100:1
@@ -118,6 +118,6 @@ Use the most specific constraint that matches your requirements. Specifying a co
 
 ## gpu_viz partition restrictions
 
-The gpu_viz partition is reserved exclusively for onBunya desktop sessions. Do not submit jobs to this partition using `sbatch` or `salloc`
+The gpu_viz partition is reserved exclusively for onBunya desktop sessions. Do not submit jobs to this partition using `sbatch` or `salloc` or `srun`.
 
 
