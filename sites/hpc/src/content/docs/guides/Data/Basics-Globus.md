@@ -3,7 +3,7 @@ title: "The Globus Basics"
 ---
 
 
-:::[Note]
+:::note
 
 This page is still under construction. Last updated 20260331
 :::
