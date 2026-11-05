@@ -26,7 +26,8 @@ The available compute nodes on Bunya are listed in the table below. Please note 
 **Default number of GPUs for all partitions: zero**
 
 **gpu_viz** is used exclusively by onBunya. Users should not be submitting batch jobs via sbatch to the gpu_viz partition. The L40s GPUs are available through the gpu_cuda partition. <br>
-**ext_intersect** is exclusive for ACU users.
+**ext_intersect** is exclusive for ACU users.<br>
+**gpu_sxm** requires cuda 12.2 or higher or the node will crash.
 
 See [Slurm tips](../slurm-tips) on how to target multiple partitions and range of GPUs.
 
