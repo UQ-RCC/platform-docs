@@ -1,7 +1,7 @@
 ---
 title: "Basics housekeeping"
----
 pagefind: false
+---
 
 `under construction 20260305`
 
