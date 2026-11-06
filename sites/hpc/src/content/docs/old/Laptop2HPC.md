@@ -1,7 +1,7 @@
 ---
 title: "Laptop 2 HPC"
----
 pagefind: false
+---
 
 ### Using R on Bunya - Making the move from Laptop to HPC
 
