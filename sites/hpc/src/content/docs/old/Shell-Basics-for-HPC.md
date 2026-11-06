@@ -1,8 +1,7 @@
 ---
 title: "Shell basics for HPC"
+pagefind: false
 ---
-
-# Shell Basics for HPC
 
 ## Workshop Objective
 _Learn how to enhance your effectiveness in using high-performance computing (HPC) resources, by improving the resilience and utility of your HPC job scripts using shell scripting techniques._
