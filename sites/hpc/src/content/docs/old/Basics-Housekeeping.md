@@ -1,8 +1,7 @@
 ---
 title: "Basics housekeeping"
 ---
-
-# Basics of Housekeeping on HPC
+pagefind: false
 
 `under construction 20260305`
 
