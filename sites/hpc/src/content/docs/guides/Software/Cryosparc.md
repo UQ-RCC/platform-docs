@@ -29,15 +29,11 @@ If your desktop job runs out of time, it will be stopped and this can cause corr
 ## Archiving projects
 Because Bunya enforces disk space quotas and automatic file deletion from scratch directories, you are encouraged to archive projects when you are not using them. Cryosparc has functions for detaching and archiving projects, but these can fail and corrupt the data from some of your jobs if you run out of quota during the process. You can monitor the log files for errors during these operations, the logs are in `~/cryosparc/cryosparc_master/run`.
 
-Because of this, the best way to archive your projects is to use rsync to copy the project directory onto an RDM collection. The command to do so might looks like this:
-
-`rsync -avWP /scratch/user/$USER/cryosparc/projects/MyProject /QRISdata/Qnnnn/cryosparc_archive/`
-
-which will put all files in `MyProject` into `cryosparc_archive`. After you have copied the files (you can verify the copy by running the rsync command again), you can detach the project in Cryosparc and optionally delete the database entry for it, which will free up some space in your home directory. You can also use `tar` to bundle and compress the project into one file for archival, like this:
+Because of this, the best way to archive your projects is to use `tar` to bundle and compress the project into one file for archival, like this:
 
 `tar -zcvf /QRISdata/Qnnnn/cryosparc_archive/MyProject.tar.gz /scratch/user/$USER/cryosparc/projects/MyProject`
 
-If you want to reattach the project, you can copy it back into your scratch by the same method. If Cryosparc gives an error reattaching the project, you may need to delete the `cs.lock` file in the project's directory.
+If you want to reattach the project, you can use `tar -zxvf` (with 'x' instead of 'c') to extract it back into your scratch by the same method. If Cryosparc gives an error reattaching the project, you may need to delete the `cs.lock` file in the project's directory.
 
 ## Troubleshooting
 There are a variety of common errors you might see when running CryoSPARC. If you cannot fix the error yourself, open a ticket with RCC support for help. The first thing to check is that your home directory's file usage is below quota. Run the `rquota` command in a terminal, or select `Files -> GPFS Quota` in onBunya (the website, not in a desktop session) to check this, and if you are over quota you will have to move or delete files to return under quota.
@@ -81,5 +77,16 @@ tar -zcf /QRISdata/Qnnnn/cs-db-backup.tar.gz cryosparc_database`
 `cryosparcm user create --email "email-address" --firstname "first-name" --lastname "last-name" --username "username" --password "password" --role "admin"`
 
 You can find the values to substitute into the quotes from the file `~/cryosparc-default-user.txt`, or just make up new ones.
+
+### I had crashed jobs and now the default lane won't work
+You need to clear the jobs that were queued to it. If you cannot do this by marking the jobs as complete then clearing them in the web interface, you will have to mark the jobs as failed on the command line. The command to do this is:
+
+`cryosparcm cli "api.jobs.mark_failed('Px', 'Jy')"`
+
+where x and y match the project and job numbers of the stuck job. Cryosparc needs to be running when you do this so launch it and open a second terminal window to run the commands. If you get an error that cryosparcm is not found, you will have to use the full path:
+
+`~/cryosparc/cryosparc_master/bin/cryosparcm cli "api.jobs.mark_failed('Px', 'Jy')"`
+
+Once the jobs are marked as failed, you should be able to delete or clear them in the web interface. After that, you will have to close and relaunch Cryosparc to update the default lane configuration.
 
 5. From this point, you should be able to log in to Cryosparc using the email and password you entered. To reattach your projects, there is an "Attach project" function in the project view. First, you are going to have to go to the directories where your projects are in the file browser and delete the `cs.lock` files in each project's directory. It may take several minutes to read in all the files from all the Jobs, depending on how large the projects are.
