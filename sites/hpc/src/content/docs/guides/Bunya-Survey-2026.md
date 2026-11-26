@@ -6,7 +6,7 @@ title: Bunya User Survey 2026 Response
 
 In general, users were happy about the application process for Bunya access. The main concern from users was that new users are often not sure about the answers to some of the questions. In response to this, RCC has added clarification to the question text. 
 
-![](../../media/BunyaUserSurvey-2026-Q3.png)
+![](../media/BunyaUserSurvey-2026-Q3.png)
 
 Specific user concerns ranged from accounting groups, FoR codes, too many questions, not sure what and how much is required, not knowing what will be required/expected, long response times (up to 48 hours), and confusion about the need for RCC and QRIScloud. 
 
@@ -30,19 +30,19 @@ Below are the graphical summaries for the survey's choice questions. In general 
 - [Governance, Allocation & Transparency](#governance-allocation--transparency)
   
 
-![](../../media/BunyaUserSurvey-2026-Q5.png)
+![](../media/BunyaUserSurvey-2026-Q5.png)
 
-![](../../media/BunyaUserSurvey-2026-Q7.png)
+![](../media/BunyaUserSurvey-2026-Q7.png)
 
-![](../../media/BunyaUserSurvey-2026-Q8.png)
+![](../media/BunyaUserSurvey-2026-Q8.png)
 
-![](../../media/BunyaUserSurvey-2026-Q9.png)
+![](../media/BunyaUserSurvey-2026-Q9.png)
 
-![](../../media/BunyaUserSurvey-2026-Q11.png)
+![](../media/BunyaUserSurvey-2026-Q11.png)
 
-![](../../media/BunyaUserSurvey-2026-Q12.png)
+![](../media/BunyaUserSurvey-2026-Q12.png)
 
-![](../../media/BunyaUserSurvey-2026-Q13.png)
+![](../media/BunyaUserSurvey-2026-Q13.png)
 
 
 ## Storage & Data Management 
