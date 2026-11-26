@@ -109,7 +109,7 @@ A limit of 5000 submitted jobs applies to the `normal` QoS and the `general` par
 
 Bunya operates on fair share and per-user limits. Fair share allows larger users to use resources, if available, beyond an equal fixed amount per user, but ensures that smaller users are able to get their jobs done as well. 
 
-Bunya uses QoS (quality of service) to set per-user limits. There are available QoS that allow higher per-user limits, for example the `sdf` QoS that allows the use of up to 8 Mi300x GPUs. Access to these QoS is on application and is decided on a case by case basis. These QoS are still subject to fair share.
+Bunya uses QoS (quality of service) to set per-user limits. There are available QoS that allow higher per-user limits, for example the `sdf` QoS that allows the use of up to 8 Mi300x or Mi355x GPUs. Access to these QoS is on application and is decided on a case-by-case basis. These QoS are still subject to fair share.
 
 Providing shared group allocations is incompatible with fair share and would require an application process that is based on merit, set milestones, and reporting. Operating fair share and allocations at the same time on Bunya is not possible and would require two separate clusters to be set up.
 
