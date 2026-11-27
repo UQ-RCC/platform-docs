@@ -20,7 +20,7 @@ Specific user concerns ranged from accounting groups, FoR codes, too many questi
 
 Below are the graphical summaries for the survey's choice questions. In general users rated Bunya and user support above 4 stars. The suggestions and concerns from the free text questions have been summarised and responded to under the areas of:
 
-- [Storage and Data Management](#storage--data-management)
+- [Storage and Data Management](#storage-and-data-management)
 - [Compute Resources and Performance](#compute-resources--performance)
 - [System Reliability and Access](#system-reliability--access)
 - [Authentication and Security (MFA)](#authentication--security-mfa)
