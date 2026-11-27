@@ -120,11 +120,11 @@ Users should consider some key differences between fair share and allocations.
 
 ### Better visibility of queue status, fair share, and available GPUs
 
-Individual users cannot see other user's jobs and usage on Bunya. RCC is looking into on how compute node status and utilisation could be made available via a dashboard to users in the future.
+Individual users cannot see other users' jobs and usage on Bunya. RCC is investigating how compute node status and utilisation could be made available via a dashboard to users in the future.
 
 ### Catching jobs that do not finish cleanly and block resources
 
-Jobs using a GPU node on Bunya that do not cleanly finish and block resources are automatically terminated by the system. See [here](https://docs.hpc.rcc.uq.edu.au/guides/slurm/monitoringjobs/#how-to-know-what-resources-are-actually-being-utilised-by-a-job) for more information.
+Jobs using a GPU node on Bunya that do not cleanly finish and block resources are automatically terminated by the system. See [how to check the utilisation](https://docs.hpc.rcc.uq.edu.au/guides/slurm/monitoringjobs/#how-to-know-what-resources-are-actually-being-utilised-by-a-job) for more information.
 
 ## System Reliability and Access 
 
@@ -137,7 +137,7 @@ Users have reported frequent disconnects, especially VS Code and some for onBuny
 
 VS Code and other IDE applications are no longer permitted to run on Bunya's login nodes. This is due to problems they could cause to the load of the login node. Connections made to the login nodes with an IDE application are automatically terminated. Users can use the VSCode app provided via [onBunya](https://docs.hpc.rcc.uq.edu.au/guides/onbunya/ondemand-guide/) or start VSCode once they are on a compute node via an interactive job.
 
-SSH and SFTP connections, via command line or clients like PuTTY, should set a keep-alive interval (`ServerAliveInterval` in OpenSSH; "Seconds between keepalives" in PuTTY). A setting of 300 (in seconds) is usually sufficient. This keeps the connection to the Bunya login node alive even when the user is not actively using the terminal from the connection. See [here](https://docs.hpc.rcc.uq.edu.au/guides/accessing-bunya/connecting-to-bunya/#preventing-ssh-session-timeouts) for more information.
+SSH and SFTP connections, via command line or clients like PuTTY, should set a keep-alive interval (`ServerAliveInterval` in OpenSSH; "Seconds between keepalives" in PuTTY). A setting of 300 (in seconds) is usually sufficient. This keeps the connection to the Bunya login node alive even when the user is not actively using the terminal from the connection. See [how to prevent timeouts](https://docs.hpc.rcc.uq.edu.au/guides/accessing-bunya/connecting-to-bunya/#preventing-ssh-session-timeouts) for more information.
 
 ### Better performance and responsiveness
 
