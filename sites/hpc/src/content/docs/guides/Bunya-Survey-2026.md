@@ -23,11 +23,11 @@ Below are the graphical summaries for the survey's choice questions. In general 
 - [Storage and Data Management](#storage--data-management)
 - [Compute Resources and Performance](#compute-resources--performance)
 - [System Reliability and Access](#system-reliability--access)
-- [Authentication & Security (MFA)](#authentication--security-mfa)
-- [Software & Environment Management](#software--environment-management)
+- [Authentication and Security (MFA)](#authentication--security-mfa)
+- [Software and Environment Management](#software--environment-management)
 - [Documentation, Training & Guidance](#documentation-training--guidance)
-- [User Experience & Communication](#user-experience--communication)
-- [Governance, Allocation & Transparency](#governance-allocation--transparency)
+- [User Experience and Communication](#user-experience--communication)
+- [Governance, Allocation and Transparency](#governance-allocation--transparency)
   
 
 ![](../media/BunyaUserSurvey-2026-Q5.png)
@@ -45,7 +45,7 @@ Below are the graphical summaries for the survey's choice questions. In general 
 ![](../media/BunyaUserSurvey-2026-Q13.png)
 
 
-## Storage & Data Management 
+## Storage and Data Management 
 
 Users have voiced a need for more flexible and/or larger storage option and a storage option that is between UQRDM and `/scratch`. The main concerns were 
 
@@ -77,7 +77,7 @@ This does **not** mean everything in `/scratch` is deleted every 90 days. The 90
 
 - Optimising the performance of retrieval depends on the "shape" of the data put onto UQRDM Q storage records. Typically, transferring many small files into the UQRDM Q storage record, whilst possible, is costly in terms of performance of writes *and* reads. Bundling large data structures (hundreds or thousands of files) before transferring data to the RDM will provide a better user experience when a user recalls that data. The file comes back as one large stream of data which can then be unzipped, untarred, or expanded on scratch, rather than many tiny transfers and movements of offsets on the filesystem or archive media. This technique of bundling data before moving it to UQRDM Q storage records also results in less use of the UQRDM Q storage file quota.
  
-## Compute Resources & Performance 
+## Compute Resources and Performance 
 
 Users voiced a high demand for more GPU (especially H100) and CPU capacity. The main concerns were long queue times (>24 hours for GPUs) and difficulty getting interactive sessions. Users have requested:
 
@@ -126,7 +126,7 @@ Individual users cannot see other user's jobs and usage on Bunya. RCC is looking
 
 Jobs using a GPU node on Bunya that do not cleanly finish and block resources are automatically terminated by the system. See [here](https://docs.hpc.rcc.uq.edu.au/guides/slurm/monitoringjobs/#how-to-know-what-resources-are-actually-being-utilised-by-a-job) for more information.
 
-## System Reliability & Access 
+## System Reliability and Access 
 
 Users have reported frequent disconnects, especially VS Code and some for onBunya. They have also reported that RStudio seems laggy. There were also complaints about too many outages but acknowledgement that this has improved. The main needs were
 
@@ -143,9 +143,9 @@ SSH and SFTP connections, via command line or clients like PuTTY, should set a k
 
 The reports of RStudio being laggy could be due to not enough resources being made available in the desktop. These kinds of issues are best investigated while RCC staff can observe which is done best during one of RCC's face-to-face drop-in sessions, Hacky Hour or vHPC. 
  
-## Authentication & Security (MFA) 
+## Authentication and Security (MFA) 
 
-Users see MFA and that it is required on every login as disruptive and they prefer other applications over Duo. Users have asked for
+Users find the MFA prompt at every login as disruptive and they prefer other applications over Duo. Users have asked for
 
 - Push-based authentication in addition to passcodes
 - Support for YubiKeys or user-selected MFA methods 
@@ -157,7 +157,7 @@ For the majority of users Bunya access is with active UQ credentials with existi
 Bunya's setup currently does not allow the use of YubiKeys or passcodes, but this may change in the future.
 
  
-## Software & Environment Management 
+## Software and Environment Management 
 
 The survey found that users are often missing software, or that the versions available are too old. Installing software themselves is often too hard. Others need to frequently build their own tools. The main challenges were with 
 
@@ -223,7 +223,7 @@ Future work on Documentation, Training, and Guidance will involve
 - The RCC Domain Champions Network meets every quarter. Champions are consulted around changes, new capabilities and purchases of new Bunya hardware. Champions raise problems from their domain and ensure that their domain is aware of important changes and new capabilities. RCC is working on making the Domain Champions public on the RCC webpages in the future.
 - Restart RCC outreach seminars in institutes and schools
 
-## User Experience & Communication 
+## User Experience and Communication 
 
 Some users perceive support as slow, impersonal, and often unhelpful. They have requested
 
@@ -258,11 +258,11 @@ The RCC team is investigating feasible ways to provide email alerts to users whe
 - The RCC User Guides include a range of [short videos](https://docs.hpc.rcc.uq.edu.au/guides/getting-started/general-hpc-videos/) that walk through some basic HPC concepts and basic Linux commands.
 - RCC offers two 1-hour face-to-face drop-in sessions, [Hacky Hour and vHPC](https://docs.hpc.rcc.uq.edu.au/guides/getting-help/getting-help/#getting-hands-on-help), per week where staff can walk users through getting started on Bunya. 
  
-## Governance, Allocation & Transparency 
+## Governance, Allocation and Transparency 
 
 Users felt that there was not enough information and clarity around how resources are allocated, accounting groups, and fair share. There is a need for 
 
-- Transparency, or easy accessible information on scheduling
+- Transparency, or easily accessible information on scheduling
 - Clear way to request more resources
 - Better explanation of system/queue behaviour
 
