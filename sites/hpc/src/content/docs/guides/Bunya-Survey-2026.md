@@ -89,11 +89,11 @@ Users voiced a high demand for more GPU (especially H100) and CPU capacity. The 
 
 ### High priority QoS for short jobs
 
-Providing a specific partition to accommodate short jobs requires dedicated resources. This means full GPU/CPU nodes that are only available for short jobs and are therefore no longer available for any other jobs. Bunya uses QoS (quality of service) to set higher priorities for specific types of jobs across all resources, CPU and GPU. 
+Providing a partition with a short queue, so that jobs start fast requires dedicated resources that are kept idle to be available for these jobs. This means full GPU/CPU nodes that are only available for short jobs and are therefore no longer available for any other jobs. Bunya uses QoS (quality of service) to set higher priorities for specific types of jobs across all resources, CPU and GPU. 
 
-Bunya provides a dedicated partition and QoS for onBunya accelerated and standard desktops that require less than 24 hour runtime.
+Bunya provides a dedicated partition and QoS for onBunya accelerated and standard desktops that require up to 24 hour runtime.
 - The `gpu_viz` partition is exclusive for onBunya jobs and provides dedicated GPU resources such as the A16 and L40 GPUs. 
-- The `viz` QoS is exclusive to onBunya jobs and has a priority of 30, three times that of the `gpu` and `normal` QoS. The `viz` QoS allows 24 hours of runtime, two jobs, two GPUs (one per job), and up to 500GB of CPU RAM per job. 
+- The `viz` QoS is exclusive to onBunya jobs and has a priority of 30, three times that of the `gpu` and `normal` QoS. The `viz` QoS allows up to 24 hours of runtime, two jobs, two GPUs (one per job), and up to 500GB of CPU RAM per job. 
 
 There are two high priority QoS for short jobs submitted via `sbatch`.
 - `debug` QoS has a priority of 30, three times that of the `gpu` and `normal` QoS and allows 1 hour of runtime and up to two jobs.
@@ -109,13 +109,13 @@ A limit of 5000 submitted jobs applies to the `normal` QoS and the `general` par
 
 Bunya operates on fair share and per-user limits. Fair share allows larger users to use resources, if available, beyond an equal fixed amount per user, but ensures that smaller users are able to get their jobs done as well. 
 
-Bunya uses QoS (quality of service) to set per-user limits. There are available QoS that allow higher per-user limits, for example the `sdf` QoS that allows the use of up to 8 Mi300x or Mi355x GPUs. Access to these QoS is on application and is decided on a case-by-case basis. These QoS are still subject to fair share.
+Bunya uses QoS (quality of service) to set per-user limits. There are available QoS that allow higher per-user limits, for example the `sdf` QoS that allows the use of up to 8 MI300x or MI355x GPUs. Access to these QoS is on application and is decided on a case-by-case basis. These QoS are still subject to fair share.
 
-Providing shared group allocations is incompatible with fair share and would require an application process that is based on merit, set milestones, and reporting. Operating fair share and allocations at the same time on Bunya is not possible and would require two separate clusters to be set up.
+Providing shared group allocations is incompatible with fair share and would require an application process that is based on merit, set milestones, and reporting. RCC has made the operational choice that employing fair share and allocations at the same time on Bunya is not possible.
 
 Users should consider some key differences between fair share and allocations.
 
-- Fair share constantly refills and allows a user to keep running jobs even if their fair share is zero. A single user cannot affect other users.
+- Fair share constantly refills and allows a user to keep running jobs even if their fair share is zero. A single user cannot affect the fair share of other users.
 - Once an allocation is used, users can no longer run any jobs. And a single user can burn through a group's allocation, leaving the rest of the group with no allocation to run their jobs.
 
 ### Better visibility of queue status, fair share, and available GPUs
@@ -147,10 +147,10 @@ The reports of RStudio being laggy could be due to not enough resources being ma
 
 Users see MFA and that it is required on every login as disruptive and they prefer other applications over Duo. Users have asked for
 
-- Push-based authentication instead of passcodes
+- Push-based authentication in addition to passcodes
 - Support for YubiKeys or user-selected MFA methods 
 
-During the August 2026 maintenance Bunya moved from Duo to Okta, which uses push-based authentication.
+During the August 2026 maintenance Bunya moved from Duo to Okta. Bunya's Okta setup currently only supports push-based authentication.
 
 For the majority of users Bunya access is with active UQ credentials with existing MFA methods. Due to this Bunya will use UQ's MFA method for all UQ users. External users are currently directed to use other MFA methods that are accessible to them. 
 
