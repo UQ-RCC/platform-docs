@@ -25,7 +25,7 @@ Below are the graphical summaries for the survey's choice questions. In general 
 - [System Reliability and Access](#system-reliability-and-access)
 - [Authentication and Security (MFA)](#authentication-and-security-mfa)
 - [Software and Environment Management](#software-and-environment-management)
-- [Documentation, Training & Guidance](#documentation-training-and-guidance)
+- [Documentation, Training and Guidance](#documentation-training-and-guidance)
 - [User Experience and Communication](#user-experience-and-communication)
 - [Governance, Allocation and Transparency](#governance-allocation-and-transparency)
   
@@ -197,7 +197,7 @@ RCC is actively working on providing an API for Slurm soon.
 Better integration with VS Code and other IDEs may be provided in the future.
 
 
-## Documentation, Training & Guidance 
+## Documentation, Training and Guidance 
 
 The responses and suggestions that users provided around the user guides and training were a major theme. Users highlighted significant gaps in usability, clarity, and structure of documentation and training. The main issues were
 
